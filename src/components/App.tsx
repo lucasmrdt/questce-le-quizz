@@ -12,7 +12,7 @@ const App = () => {
   return (
     <SnackbarProvider>
       <a
-        rel={"nofollow"}
+        rel={"noopener noreferrer"}
         href={"https://github.com/lucasmrdt/questce-le-quizz"}
         className={classes.github}
         target={"_blank"}
