@@ -1,0 +1,34 @@
+{
+  "logique": [
+    {
+      "question": {
+        "type": "string",
+        "value": "une assertion"
+      },
+      "answer": {
+        "type": "string",
+        "value": "un énoncé vrai ou faux"
+      }
+    },
+    {
+      "question": {
+        "type": "string",
+        "value": "une proposition"
+      },
+      "answer": {
+        "type": "string",
+        "value": "un énoncé vrai ou faux"
+      }
+    },
+    {
+      "question": {
+        "type": "katex",
+        "value": "P \\equiv V"
+      },
+      "answer": {
+        "type": "katex",
+        "value": "P \\text{ est une proposition vraie}"
+      }
+    }
+  ]
+}
