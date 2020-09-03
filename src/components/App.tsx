@@ -2,12 +2,14 @@ import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 // @ts-ignore
 import SnackbarProvider from "react-simple-snackbar";
+import { makeStyles } from "@material-ui/core";
 
 import CardsProvider from "./CardsProvider";
-import { makeStyles } from "@material-ui/core";
+import { useCardsId } from "../hooks";
 
 const App = () => {
   const classes = useStyles();
+  const cardsId = useCardsId();
 
   return (
     <SnackbarProvider>
@@ -19,6 +21,7 @@ const App = () => {
       >
         <GitHubIcon />
       </a>
+      <h1 className={classes.title}>#{cardsId?.toUpperCase()}</h1>
       <CardsProvider />
     </SnackbarProvider>
   );
@@ -29,6 +32,14 @@ const useStyles = makeStyles(() => ({
     position: "absolute",
     top: 10,
     right: 10,
+    color: "rgb(0, 0, 0, .4)",
+  },
+  title: {
+    position: "absolute",
+    top: 10,
+    left: 10,
+    color: "rgb(0, 0, 0, .4)",
+    fontSize: 24,
   },
 }));
 

@@ -1,0 +1,64 @@
+{
+  "logique": [
+    {
+      "question": "une assertion / une proposition",
+      "answer": "un énoncé vrai ou faux"
+    },
+    {
+      "question": "$P \\equiv V$",
+      "answer": "$P$ est une proposition vraie"
+    },
+    {
+      "question": "2 propositions équivalentes ($P_1 = P_2$)",
+      "answer": "2 propositions qui ont la même table de vérité"
+    },
+    {
+      "question": "un prédicat",
+      "answer": "une assertion qui dépend d'un ou plusieurs paramètres"
+    },
+    {
+      "question": "une tautologie",
+      "answer": "un prédicat tout le temps vrai"
+    },
+    {
+      "question": "la négation d'une proposition",
+      "answer": "$\\neg P$ ou $\\overline{P}$"
+    },
+    {
+      "question": "une conjonction",
+      "answer": "au signe $\\land$"
+    },
+    {
+      "question": "une disjonction",
+      "answer": "au signe $\\lor$"
+    },
+    {
+      "question": "$P \\implies Q$ (ensembliste)",
+      "answer": "$P \\subset Q$ (implication)"
+    },
+    {
+      "question": "$P$ et $Q$ dans $P \\implies Q$",
+      "answer": "$P$ est condition suffisante et $Q$ est une condition nécessaire"
+    },
+    {
+      "question": "$P \\implies Q$ (disjonction)",
+      "answer": "$\\neg P \\vee Q$ https://firebasestorage.googleapis.com/v0/b/questce-ca378.appspot.com/o/implication.png?alt=media&token=16ec7aff-98e5-4f09-ab83-87be9099ce4f"
+    },
+    {
+      "question": "contraposé de $P \\implies Q$",
+      "answer": "$\\neg Q \\implies \\neg P$"
+    },
+    {
+      "question": "réciproque de $P \\implies Q$",
+      "answer": "$P \\Longleftarrow Q$"
+    },
+    {
+      "question": "$\\neg(P \\implies Q)$ (conjonction)",
+      "answer": "$P \\land \\neg Q$ (implication)"
+    },
+    {
+      "question": "une contraposée",
+      "answer": "$\\neg Q \\implies \\neg P$"
+    }
+  ]
+}

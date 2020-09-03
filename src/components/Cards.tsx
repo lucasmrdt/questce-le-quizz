@@ -1,24 +1,19 @@
 import React, { useCallback, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import { Button } from "@material-ui/core";
+import RefreshIcon from "@material-ui/icons/Refresh";
 
 import Card from "./Card";
 import { ICard } from "../types";
 
-const initCards = (cards: ICard[]) => [
-  ...cards,
-  ...cards.map(({ question, answer }) => ({
-    question: answer,
-    answer: question,
-  })),
-];
-
 interface Props {
   cards: ICard[];
+  onRefresh: () => void;
 }
 
-const Cards: React.FC<Props> = ({ cards: initialCards }) => {
+const Cards: React.FC<Props> = ({ cards: initialCards, onRefresh }) => {
   const classes = useStyles();
-  const [cards, setCards] = useState(initCards(initialCards));
+  const [cards, setCards] = useState(initialCards);
 
   const onSuccess = useCallback(() => {
     setCards((prev) => prev.slice(1));
@@ -29,12 +24,22 @@ const Cards: React.FC<Props> = ({ cards: initialCards }) => {
 
   if (cards.length === 0) {
     return (
-      <h1 className={classes.text}>
-        T'as terminé le "qu'est ce" !{" "}
-        <span role={"img"} aria-label={"tada"}>
-          🎉
-        </span>
-      </h1>
+      <div className={classes.fullCentered}>
+        <h1 className={classes.text}>
+          Bravo tu as terminé !{" "}
+          <span role={"img"} aria-label={"tada"}>
+            🎉
+          </span>
+        </h1>
+        <Button
+          onClick={onRefresh}
+          variant={"contained"}
+          className={classes.button}
+        >
+          Recommencer
+          <RefreshIcon className={classes.icon} />
+        </Button>
+      </div>
     );
   }
   const [selectedCard] = cards;
@@ -49,6 +54,20 @@ const useStyles = makeStyles(() => ({
     fontSize: 30,
     color: "rgb(70, 70, 70)",
     textAlign: "center",
+  },
+  fullCentered: {
+    display: "flex",
+    height: "100%",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  button: {
+    marginTop: 30,
+  },
+  icon: {
+    marginLeft: 15,
   },
 }));
 

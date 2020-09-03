@@ -2,21 +2,29 @@ import React, { useCallback, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import TeX from "@matejmazur/react-katex";
+import reactStringReplace from "react-string-replace";
 
-import { ICard, IValue, IValueType } from "../types";
+import { ICard } from "../types";
 
-const Value = ({ value }: { value: IValue }) => {
+const Value = ({ value }: { value: string }): JSX.Element => {
   const classes = useStyles();
+  const contentWithNewLines = reactStringReplace(value, /(\n)/i, () => (
+    <div className={classes.separator} />
+  ));
+  const contentWithPictures = reactStringReplace(
+    contentWithNewLines,
+    /(https:\/\/[^\s/$.?#].[^\s]*)/i,
+    (match) => (
+      <img key={match} src={match} className={classes.image} alt={"answer"} />
+    )
+  );
+  const contentWithKatex = reactStringReplace(
+    contentWithPictures,
+    /\$(.+?)\$/,
+    (match) => <TeX className={classes.inline} key={match} math={match} />
+  );
 
-  switch (value.type) {
-    case IValueType.katex:
-      return <TeX className={classes.text} math={value.value} />;
-    case IValueType.picture:
-      return <img src={value.value} className={classes.image} alt={"answer"} />;
-    case IValueType.string:
-    default:
-      return <h2 className={classes.text}>{value.value}</h2>;
-  }
+  return <p className={classes.text}>{contentWithKatex}</p>;
 };
 
 interface Props {
@@ -44,9 +52,9 @@ const Card: React.FC<Props> = ({ card, onSuccess, onFailure }) => {
   if (showAnswer) {
     return (
       <div className={classes.root}>
-        <h1 className={classes.title}>La réponse était ...</h1>
+        <h1 className={classes.title}>Cela correspond à ...</h1>
         <Value value={card.answer} />
-        <div className={classes.buttonsContainer}>
+        <div className={`${classes.buttonsContainer} ${classes.buttons}`}>
           <Button
             variant={"contained"}
             color={"secondary"}
@@ -73,9 +81,9 @@ const Card: React.FC<Props> = ({ card, onSuccess, onFailure }) => {
   }
   return (
     <div className={classes.root}>
-      <h1 className={classes.title}>Qu'est ce ...</h1>
+      <h1 className={classes.title}>À quoi correspond ...</h1>
       <Value value={card.question} />
-      <div>
+      <div className={classes.buttons}>
         <Button variant={"contained"} onClick={onShowAnswer}>
           Afficher la réponse
           <span className={classes.icon} role={"img"} aria-label={"sad"}>
@@ -89,18 +97,27 @@ const Card: React.FC<Props> = ({ card, onSuccess, onFailure }) => {
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: "100%",
+    minHeight: "100%",
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-around",
+    justifyContent: "center",
     alignItems: "center",
+    padding: "90px 0",
+  },
+  separator: {
+    width: "100%",
   },
   title: {
     fontSize: 25,
     color: "rgb(90, 90, 90)",
+    marginBottom: 40,
   },
   text: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexWrap: "wrap",
     fontSize: 30,
     color: "rgb(50, 50, 50)",
     maxWidth: "90%",
@@ -110,15 +127,23 @@ const useStyles = makeStyles(() => ({
   image: {
     maxWidth: "80%",
     maxHeight: "80%",
+    margin: "0 20%",
   },
   icon: {
     marginLeft: 10,
+  },
+  buttons: {
+    position: "fixed",
+    bottom: 30,
   },
   buttonsContainer: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     width: "80%",
+  },
+  inline: {
+    margin: "0 8px",
   },
 }));
 

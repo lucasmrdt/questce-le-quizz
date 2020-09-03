@@ -1,5 +1,5 @@
 import _ from "lodash";
-import React, { useMemo, useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Error as ErrorIcon } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
@@ -7,6 +7,7 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 import { useSnackbar } from "react-simple-snackbar";
 
 import Cards from "./Cards";
+import { useCardsId } from "../hooks";
 import { getAllCards } from "../api";
 import { ICard } from "../types";
 
@@ -38,10 +39,7 @@ const CardsProvider: React.FC = () => {
   const [cards, setCards] = useState<ICard[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [openSnackbar] = useSnackbar();
-
-  const query = useMemo(() => new URLSearchParams(window.location.search), []);
-  const cardsId = useMemo(() => query.get("id"), [query]);
-  const classes = useStyles();
+  const cardsId = useCardsId();
 
   const fetchCards = useCallback(async () => {
     setIsLoading(true);
@@ -50,7 +48,15 @@ const CardsProvider: React.FC = () => {
         throw new Error('parameter "id" must be provided');
       }
       const fetchedCards = await getAllCards(cardsId);
-      setCards(_.shuffle(fetchedCards));
+      setCards(
+        _.shuffle([
+          ...fetchedCards,
+          ...fetchedCards.map(({ answer, question }) => ({
+            question: answer,
+            answer: question,
+          })),
+        ])
+      );
     } catch (e) {
       openSnackbar(e.message);
     } finally {
@@ -58,6 +64,7 @@ const CardsProvider: React.FC = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cardsId]);
+  const onRefresh = useCallback(() => fetchCards(), [fetchCards]);
 
   useEffect(() => {
     fetchCards();
@@ -69,11 +76,7 @@ const CardsProvider: React.FC = () => {
   if (!cards) {
     return <ErrorComponent />;
   }
-  return (
-    <div className={classes.fullCentered}>
-      <Cards cards={cards} />
-    </div>
-  );
+  return <Cards cards={cards} onRefresh={onRefresh} />;
 };
 
 const useStyles = makeStyles(() => ({

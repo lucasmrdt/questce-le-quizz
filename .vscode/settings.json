@@ -1,3 +1,28 @@
 {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "highlight.regexes": {
+        "(\\$.+?\\$)": [{
+            "overviewRulerColor": "#edd46f",
+            "backgroundColor": "#edd46f",
+            "color": "#32302F"
+        }, ],
+        "(%\\[.+?\\]\\(amount:)(.+?)(\\))": [{
+                "overviewRulerColor": "#e36262",
+                "backgroundColor": "#e36262",
+                "color": "#32302F"
+            },
+            {
+                "overviewRulerColor": "#e36262",
+                "backgroundColor": "#e36262",
+                "color": "#32302F",
+                "fontWeight": "bold"
+            },
+            {
+                "overviewRulerColor": "#e36262",
+                "backgroundColor": "#e36262",
+                "color": "#32302F"
+            }
+        ]
+    },
+
 }
