@@ -48,15 +48,15 @@ const CardsProvider: React.FC = () => {
         throw new Error('parameter "id" must be provided');
       }
       const fetchedCards = await getAllCards(cardsId);
-      setCards(
-        _.shuffle([
-          ...fetchedCards,
-          ...fetchedCards.map(({ answer, question }) => ({
+      setCards([
+        ..._.shuffle(fetchedCards),
+        ..._.shuffle(
+          fetchedCards.map(({ answer, question }) => ({
             question: answer,
             answer: question,
-          })),
-        ])
-      );
+          }))
+        ),
+      ]);
     } catch (e) {
       openSnackbar(e.message);
     } finally {
