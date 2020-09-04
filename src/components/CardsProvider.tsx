@@ -51,10 +51,12 @@ const CardsProvider: React.FC = () => {
       setCards([
         ..._.shuffle(fetchedCards),
         ..._.shuffle(
-          fetchedCards.map(({ answer, question }) => ({
-            question: answer,
-            answer: question,
-          }))
+          fetchedCards
+            .filter((c) => !c.un_reversible)
+            .map(({ answer, question }) => ({
+              question: answer,
+              answer: question,
+            }))
         ),
       ]);
     } catch (e) {
