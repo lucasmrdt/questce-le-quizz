@@ -8,7 +8,7 @@ import { useSnackbar } from "react-simple-snackbar";
 
 import Cards from "./Cards";
 import { useCardsId } from "../hooks";
-import { getAllCards } from "../api";
+import { getCards } from "../api";
 import { ICard } from "../types";
 
 const ErrorComponent = () => {
@@ -44,10 +44,7 @@ const CardsProvider: React.FC = () => {
   const fetchCards = useCallback(async () => {
     setIsLoading(true);
     try {
-      if (!cardsId) {
-        throw new Error('parameter "id" must be provided');
-      }
-      const fetchedCards = await getAllCards(cardsId);
+      const fetchedCards = await getCards(cardsId);
       setCards([
         ..._.shuffle(fetchedCards),
         ..._.shuffle(

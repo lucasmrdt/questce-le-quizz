@@ -192,14 +192,14 @@
       "answer": "$Card(A) * Card(B)$"
     },
     {
-      "question": "$$",
-      "answer": ""
+      "question": "loi De Morgan",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/questce-ca378.appspot.com/o/Screenshot_2020-09-02_at_11.39.38.png?alt=media&token=900fc5b6-7a05-4ac6-8242-b8c0e778a7b0"
     }
   ],
   "applications": [
     {
       "question": "différence entre fonction et application",
-      "answer": "https://firebasestorage.googleapis.com/v0/b/questce-ca378.appspot.com/o/Screenshot%202020-09-04%20at%2014.02.31.png?alt=media&token=7c8c6df1-181e-413c-b07a-8455dde276cf"
+      "answer": "https://firebasestorage.googleapis.com/v0/b/questce-ca378.appspot.com/o/Screenshot%202020-09-04%20at%2014.02.31.png?alt=media&token=6c3d0a41-4a8a-4b73-a3ea-b5be9bf4b7cb"
     },
     {
       "question": "signification de $F^E$",
@@ -208,6 +208,22 @@
     {
       "question": "$Card(F^E)$",
       "answer": "$Card(F)^{Card(E)}$\nExemple $Card(P(E)) = 2^{Card(E}$ car chaque éléments de $E$ a le choix d'être ou non dans le sous ensemble $A \\subset P(E)$"
+    },
+    {
+      "question": "différence entre combinaison et arrangement",
+      "answer": "arrangement l'ordre compte contrairement à une combinaison"
+    },
+    {
+      "question": "un combinaison",
+      "answer": "$C_n^p = \\binom n p$ = \\frac{n!}{p!(n-p)!}"
+    },
+    {
+      "question": "nombre de permutations des éléments de $E$",
+      "answer": "$Card(E)!$"
+    },
+    {
+      "question": "un arrangement",
+      "answer": "$A^p_n = \\frac{n}{(n-p)!}$"
     }
   ],
   "par coeur": [

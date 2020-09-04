@@ -4,5 +4,5 @@ export const useCardsId = () => {
   const query = useMemo(() => new URLSearchParams(window.location.search), []);
   const cardsId = useMemo(() => query.get("id"), [query]);
 
-  return cardsId;
+  return cardsId as string | undefined;
 };

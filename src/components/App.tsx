@@ -21,7 +21,9 @@ const App = () => {
       >
         <GitHubIcon />
       </a>
-      <h1 className={classes.title}>#{cardsId?.toUpperCase()}</h1>
+      <h1 className={classes.title}>
+        #{(cardsId ?? "générale").toUpperCase()}
+      </h1>
       <CardsProvider />
     </SnackbarProvider>
   );

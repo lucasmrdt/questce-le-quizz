@@ -9,7 +9,7 @@ import { ICard } from "../types";
 const Value = ({ value }: { value: string }): JSX.Element => {
   const classes = useStyles();
   const contentWithNewLines = reactStringReplace(value, /(\n)/i, () => (
-    <div className={classes.separator} />
+    <span className={classes.separator} />
   ));
   const contentWithPictures = reactStringReplace(
     contentWithNewLines,
