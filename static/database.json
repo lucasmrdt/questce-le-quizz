@@ -207,7 +207,7 @@
     },
     {
       "question": "$Card(F^E)$",
-      "answer": "$Card(F)^{Card(E)}$\nExemple $Card(P(E)) = 2^{Card(E}$ car chaque éléments de $E$ a le choix d'être ou non dans le sous ensemble $A \\subset P(E)$"
+      "answer": "$Card(F)^{Card(E)}$\nExemple $Card(P(E)) = 2^{Card(E)}$ car chaque éléments de $E$ a le choix d'être ou non dans le sous ensemble $A \\subset P(E)$"
     },
     {
       "question": "différence entre combinaison et arrangement",
@@ -215,7 +215,7 @@
     },
     {
       "question": "un combinaison",
-      "answer": "$C_n^p = \\binom n p$ = \\frac{n!}{p!(n-p)!}"
+      "answer": "$C_n^p = \\binom n p$ = $\\frac{n!}{p!(n-p)!}$"
     },
     {
       "question": "nombre de permutations des éléments de $E$",
@@ -223,7 +223,15 @@
     },
     {
       "question": "un arrangement",
-      "answer": "$A^p_n = \\frac{n}{(n-p)!}$"
+      "answer": "$A^p_n = \\frac{n!}{(n-p)!}$"
+    },
+    {
+      "question": "correspondance",
+      "answer": "$(E,F,\\Gamma)$"
+    },
+    {
+      "question": "fonction",
+      "answer": "$(E,F,\\Gamma)$\n$\\forall x \\in E, \\forall (y, y') \\in F$\n$(x,y) \\in \\Gamma \\land (x, y') \\in \\Gamma \\implies y = y'$"
     }
   ],
   "par coeur": [
@@ -362,6 +370,12 @@
     {
       "question": "$\\Omega$ ou $\\omega$",
       "answer": "omega"
+    }
+  ],
+  "ocaml": [
+    {
+      "question": "déclaration globale (constantes)",
+      "answer": "let x = 4"
     }
   ]
 }
