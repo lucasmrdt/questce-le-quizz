@@ -150,7 +150,6 @@
       "question": "$E = \\empty = \\{\\}$",
       "answer": "ensemble vide"
     },
-
     {
       "question": "cardinal d'un ensemble ($Card(E)$)",
       "answer": "nombre d'élément dans un ensemble"
@@ -372,10 +371,350 @@
       "answer": "omega"
     }
   ],
-  "ocaml": [
+  "l3-pfa": [
     {
       "question": "déclaration globale (constantes)",
       "answer": "let x = 4"
+    },
+    {
+      "question": "condition",
+      "answer": "if x < y then true else false"
+    },
+    {
+      "question": "pattern matching",
+      "answer": "match x with\n  | 1 -> 1\n  | x when x = 2 -> 2\n  | x::s -> 3"
+    },
+    {
+      "question": "l'ensembles de types",
+      "answer": "string, int, float, unit, bool, char, bytes, 'a list, 'a * 'b"
+    },
+    {
+      "question": "record (ou enregistrement)",
+      "answer": "type paire_dentiers = { a : int; b : int };;\n{ a=3; b=5 };;"
+    },
+    {
+      "question": "variants ou énumération",
+      "answer": "type foo = Nothing | Int of int | Pair of int * int | String of string"
+    },
+    {
+      "question": "variants récursifs",
+      "answer": "type binary_tree = Leaf of int | Tree of binary_tree * binary_tree;;"
+    },
+    {
+      "question": "variants paramétrés",
+      "answer": "type 'a binary_tree = Leaf of 'a | Tree of 'a binary_tree * 'a binary_tree"
+    },
+    {
+      "question": "appel terminal",
+      "answer": "dans une fonction f, un appel à une fonction g est dit terminal si le résultat de cet appel est le résultat de f"
+    },
+    {
+      "question": "fonction d'ordre suppérieur",
+      "answer": "fonction qui admet en argument au moins une fonction"
+    },
+    {
+      "question": "inférence de type",
+      "answer": "mécanisme qui permet à un compilateur/intrerpréteur de recherche automatiquement les types associés aux expressions"
+    },
+    {
+      "question": "polymorphisme",
+      "answer": "concept consistant à fournir une interface unique à des entités pouvant avoir des types différents"
+    },
+    {
+      "question": "lex exceptions",
+      "answer": "exception Mon_excpetion of int ;;\nraise (Mon_exception 1"
+    },
+    {
+      "question": "résurive terminale",
+      "answer": "si tous appels de f sont terminaux"
+    },
+    {
+      "question": "Continuation Passing Style (CPS)",
+      "answer": "se passe des piles d'exécutions, argument supp (continuation), se termine par l'appel de sa continuation"
+    },
+    {
+      "question": "récursion efficace",
+      "answer": "récursion terminale avec accumulateur"
+    }
+  ],
+  "l3-systeme": [
+    {
+      "question": "l'informatique",
+      "answer": "science du traitement automatique de l'information",
+      "un_reversible": true
+    },
+    {
+      "question": "un ordinateur",
+      "answer": "machine pour traiter de l'information et programmable",
+      "un_reversible": true
+    },
+    {
+      "question": "différents composants d'un ordinateur",
+      "answer": "microprocesseur / RAM / BUS / périphérique",
+      "un_reversible": true
+    },
+    {
+      "question": "CPU (Central Processing Unit)",
+      "answer": "execute les instructions machine des programmes"
+    },
+    {
+      "question": "RAM (Random Access Memory)",
+      "answer": "mémoire informatique dans laquelle peuvent être enregistrées les informations traitées par appareil informatique"
+    },
+    {
+      "question": "BUS (dérive du latin omnibus = à tous)",
+      "answer": "système de transfert de données entre plusieurs unités de traitement de données par l'intermédiaire d'une voie de transmission commune (nappe de fils)"
+    },
+    {
+      "question": "périphérique",
+      "answer": "dispositif connecté à un système de traitement de l'information centrale et qui ajoute à ce dernier des fonctionnalitées"
+    },
+    {
+      "question": "système d'exploitation (Operating System)",
+      "answer": "programme (ou ensemble de programmes) qui gère la partie matérielle et sert de socle pour les appplications (intermédiaire entre applications/matériel)"
+    },
+    {
+      "question": "traitement par lot (batch)",
+      "answer": "~année 50, description des opérations de manipulation dans une fiche perforée (opérateur insère toutes les fiches en lot)"
+    },
+    {
+      "question": "multiprogrammation",
+      "answer": "~année 60, naissance de OS, gestion des priorités, mémoire partagée (plus d'adresse physique) MULTICS"
+    },
+    {
+      "question": "temps partagé",
+      "answer": "~fin année 60, alternance du lancement des programmes (gestion des interruptions, cycle de vie, synchronisation de processus/programmation concurrente) UNICS"
+    },
+    {
+      "question": "temps réel",
+      "answer": "~année 80-90, garantie de temps (executé en un temps donnée)"
+    },
+    {
+      "question": "systèmes répartis",
+      "answer": "~année 80-90, distribution des ressources entre plusieurs machines"
+    },
+    {
+      "question": "smartphones",
+      "answer": "~année 2007, problématique de gestion de l'énergie"
+    },
+    {
+      "question": "protocole \"poignée de main\"",
+      "answer": "chaque composant a un contrôleur, 2 bits de contrôle, algorithme côté OS"
+    },
+    {
+      "question": "communication OS - Logiciels/matériels",
+      "answer": "IRQ (Interrupt ReQuest) interruption matérielle ou logiciel (exception)"
+    },
+    {
+      "question": "Traitement d'un IRQ (Interrupt ReQuest)",
+      "answer": "envoi via ligne IRQ, sauvegarde du contexte du processus actuelle, lit en memoire routine lié au IRQ, exécution et restauration contexte précédent"
+    },
+    {
+      "question": "mode superviseur",
+      "answer": "accés à des instructions priviligiés et accés total sur tous les composants du système"
+    },
+    {
+      "question": "MMU (Memory Management Unit)",
+      "answer": "matériel informatique permettant la gestion des adresses virtuelles"
+    },
+    {
+      "question": "programme d'amorçage",
+      "answer": "chargement sur CPU du programme contenu dans une ROM\ninit. contrôleurs\ninit RAM avec les routines\nassociation code d'interruption - adresse de la routine\nattente d'une IRQ Matérielle matérielle\n\nchargement de l'OS:\nIRQ Matérielle -> chargement de l'OS\ninit RAM\nassociation code IRQ - adresse routine\ndémarage OS"
+    },
+    {
+      "question": "programme",
+      "answer": "séquence d'instructions"
+    },
+    {
+      "question": "processeur",
+      "answer": "automate électronique de traitement, peut exécuter un programme, il modifie son état en fonction des instructions"
+    },
+    {
+      "question": "processus",
+      "answer": "programme exécuté par un processeur"
+    },
+    {
+      "question": "structure d'un processus",
+      "answer": "code (recopie programme machine), environnement (défini par processus parent) et mémoire (pile d'appel et tas d'allocation)",
+      "un_reversible": true
+    },
+    {
+      "question": "rôle de l'OS",
+      "answer": "création et suppression de processus, suspension et reprise de processus et communication/synchro entre processus",
+      "un_reversible": true
+    },
+    {
+      "question": "structure de donnée (Process Control Block - PCB)",
+      "answer": "structure de données contenant les informations relatives à un processus utilisée par l'OS pour la gestion des processus",
+      "un_reversible": true
+    },
+    {
+      "question": "différentes composant du PCB",
+      "answer": "mémoire, gestion accès processeur, gestion périphériques, gestion temps partagé",
+      "un_reversible": true
+    },
+    {
+      "question": "cycle de vie d'un processus",
+      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F02563447-61cf-4fa6-854f-0458408ff3f2%2FUntitled.png?table=block&id=fbb3a410-d0da-4a61-93b5-13191b7dbc44&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "un_reversible": true
+    },
+    {
+      "question": "différentes raison de la suspension d'un processus",
+      "answer": "demande E/S, temps expiré, créé un processus fils, interruption wait",
+      "un_reversible": true
+    },
+    {
+      "question": "action de l'OS",
+      "answer": "mémoire (chaque processus à son propre espace mémoire), verrous (processus peut verrouiller une ressource) et algorithme de synchro",
+      "un_reversible": true
+    },
+    {
+      "question": "création d'un processus",
+      "answer": "fork: processus dupliqué\nexec: remplacement du processus par un autre\ncreateprocess = exec",
+      "un_reversible": true
+    },
+    {
+      "question": "thread",
+      "answer": "unité de base du processus :\n- un processus peut avoir plusieurs threads\n- threads partagent le même code et les même donées\nè chaque thread a sa propre pile"
+    },
+    {
+      "question": "avantages des threads",
+      "answer": "gain de mémoire car code partagé, réactivité processus continue à s'exécuter pendant qu'un thread est en attente et parallélisation (multi-processeur)",
+      "un_reversible": true
+    }
+  ],
+  "l3-reseaux": [
+    {
+      "question": "modèle OSI (Open System Interconnection)",
+      "answer": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/OSI_Model_v1.svg/langfr-330px-OSI_Model_v1.svg.png",
+      "un_reversible": true
+    },
+    {
+      "question": "IP",
+      "answer": "Internet Protocole",
+      "un_reversible": true
+    },
+    {
+      "question": "réseau",
+      "answer": "ensemble d'objets interconnectés les uns aux autres qui permet de faire circuler des éléments entre ces obkets selon des règles bien définies"
+    },
+    {
+      "question": "réseau informatique",
+      "answer": "myens matériels et logiciels pour faire communiquer et permettre l'échange d'informations entre plusieurs équipements ou machines de mnière souple et fiable"
+    },
+    {
+      "question": "intérêt d'un réseau",
+      "answer": "partager les ressource, fiabilité, réduction des coûts, scalability",
+      "un_reversible": true
+    },
+    {
+      "question": "BER",
+      "answer": "Bit Error Rate"
+    },
+    {
+      "question": "histoire",
+      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8322de4c-69cc-4433-986c-f7ffb82c304e%2FScreenshot_2020-09-08_at_14.36.39.png?table=block&id=f7445908-549f-4b73-8f8a-05704995d466&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "un_reversible": true
+    },
+    {
+      "question": "2g, 3g et 4g",
+      "answer": "GSM (Global System for Mobile), UMTS (Universal Mobile Telecommunications System), LTE (Long Term Evolution)",
+      "un_reversible": true
+    },
+    {
+      "question": "QS",
+      "answer": "Quality Service; paramètre de qualité d'un service (taux erreur, délais, débit, ...)",
+      "un_reversible": true
+    },
+    {
+      "question": "différence entre norme et standard",
+      "answer": "standard de fait (ou standard): consensus sans démarche formel\nstandard de jure (ou norme): document formel adopté par instance reconnue",
+      "un_reversible": true
+    },
+    {
+      "question": "IEEE (réseaux locaux)",
+      "answer": "Institute of Electrical and Electronics Engineers"
+    },
+    {
+      "question": "ISO",
+      "answer": "International Organization for Standardization",
+      "un_reversible": true
+    },
+    {
+      "question": "ITU (télécommunication)",
+      "answer": "Union International des Télécomunnication",
+      "un_reversible": true
+    },
+    {
+      "question": "IETF (RFC)",
+      "answer": "Internet Engineering Task Force"
+    },
+    {
+      "question": "classification d'un réseau",
+      "answer": "par type de transmition (diffusion ou point à point), par topologie physique https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1abd2da3-99c6-4737-9862-af705c206cce%2FScreenshot_2020-09-08_at_15.24.24.png?table=block&id=51f8a533-b452-4d26-a690-ead2dd0abb98&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2 par taille (PAN < LAN < MAN < WAN)",
+      "un_reversible": true
+    },
+    {
+      "question": "Besoin d'une architecture par couches OSI (by ISO)",
+      "answer": "sous-division des problèmes, communication verticale par l'intermédiaire d'interface de service et horizontale même protocole",
+      "un_reversible": true
+    },
+    {
+      "question": "primitive du modèle OSI",
+      "answer": "requête, l'indication, réponse et confirmation",
+      "un_reversible": true
+    },
+    {
+      "question": "modèle OSI (7 couches)",
+      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff866d161-331a-4e4e-939a-e2cccb66c0a5%2FScreenshot_2020-09-08_at_16.43.56.png?table=block&id=6f0bd5e5-8ed8-4633-91c5-dfaacfbee22c&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "un_reversible": true
+    },
+    {
+      "question": "répéteur (OSI)",
+      "answer": "1 couche (OSI)"
+    },
+    {
+      "question": "commutateur (OSI)",
+      "answer": "2 couches (OSI)"
+    },
+    {
+      "question": "routeur (OSI)",
+      "answer": "3 couches (OSI)"
+    },
+    {
+      "question": "Architecture TCP/IP (4 couches)",
+      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F89973903-3b48-485f-ada2-9febce31fd7f%2FScreenshot_2020-09-08_at_17.04.06.png?table=block&id=cff5ccd3-c41b-42f2-9470-20f0ccac8642&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "un_reversible": true
+    },
+    {
+      "question": "bande passante ou débit de transmission",
+      "answer": "intervalle de fréquence que laisse passer le support"
+    },
+    {
+      "question": "débit binaire",
+      "answer": "vitesse de transmission (combien de bits on transmet)"
+    },
+    {
+      "question": "temps de transmission $t_t$",
+      "answer": "temps necessaire pour que le message soit envoyé/écrit entièrement\n$t_t = \frac{\text{nombre de bits à émettre}}{\text{capacité (débit) du canal}}$"
+    },
+    {
+      "question": "temps de propagation $t_p$",
+      "answer": "temps nécessaire au signal pour parcourir le support d'un point à l'autre"
+    },
+    {
+      "question": "temps de transfert $t_r$",
+      "answer": "temps nécessaire pour que le message émis à travers le réseau soit reçu complétement par l'équipement terminal récepteur\n$t_r = t_t + t_p$"
+    },
+    {
+      "question": "types de support pour l'information",
+      "answer": "guide physique (ondes éléctrique, optiques) et sans guide physique (wireless: ondes électromagnétiques)",
+      "un_reversible": true
+    },
+    {
+      "question": "types de signaux",
+      "answer": "analogique https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6fb7ea45-47ce-440b-99f8-0348657b3f19%2FUntitled.png?table=block&id=48828826-2171-4983-bdc9-926f6d864082&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2 numérique https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F78008f89-75f6-4344-8ec5-c719728d04c2%2FUntitled.png?table=block&id=6f1a8c04-9000-4adf-9bd8-7f8513a5f7c9&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "un_reversible": true
     }
   ]
 }

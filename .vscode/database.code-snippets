@@ -16,5 +16,13 @@
 			"},",
 		],
 		"description": "create a new card"
+	},
+	"unreversible card": {
+		"scope": "json",
+		"prefix": "unr",
+		"body": [
+			"\"un_reversible\": true,",
+		],
+		"description": "make card unreversible"
 	}
 }
