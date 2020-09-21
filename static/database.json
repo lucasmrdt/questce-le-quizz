@@ -183,7 +183,7 @@
     },
     {
       "question": "cycle de vie d'un processus",
-      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F02563447-61cf-4fa6-854f-0458408ff3f2%2FUntitled.png?table=block&id=fbb3a410-d0da-4a61-93b5-13191b7dbc44&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/process.png?alt=media&token=a59cc581-de90-4ca8-bff6-bb3c6e55938c",
       "un_reversible": true
     },
     {
@@ -228,7 +228,7 @@
     },
     {
       "question": "réseau informatique",
-      "answer": "myens matériels et logiciels pour faire communiquer et permettre l'échange d'informations entre plusieurs équipements ou machines de mnière souple et fiable"
+      "answer": "moyens matériels et logiciels pour faire communiquer et permettre l'échange d'informations entre plusieurs équipements ou machines de manière souple et fiable"
     },
     {
       "question": "intérêt d'un réseau",
@@ -241,7 +241,7 @@
     },
     {
       "question": "histoire",
-      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F8322de4c-69cc-4433-986c-f7ffb82c304e%2FScreenshot_2020-09-08_at_14.36.39.png?table=block&id=f7445908-549f-4b73-8f8a-05704995d466&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_14.36.39.png?alt=media&token=20e6f0f3-c1f9-4876-bce8-885395e77016",
       "un_reversible": true
     },
     {
@@ -279,7 +279,7 @@
     },
     {
       "question": "classification d'un réseau",
-      "answer": "par type de transmition (diffusion ou point à point), par topologie physique https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1abd2da3-99c6-4737-9862-af705c206cce%2FScreenshot_2020-09-08_at_15.24.24.png?table=block&id=51f8a533-b452-4d26-a690-ead2dd0abb98&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2 par taille (PAN < LAN < MAN < WAN)",
+      "answer": "par type de transmition (diffusion ou point à point), par topologie physique https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_15.24.24.png?alt=media&token=c4317bd6-0013-4f84-9ede-8b1afc36fe79 par taille (PAN < LAN < MAN < WAN)",
       "un_reversible": true
     },
     {
@@ -294,7 +294,7 @@
     },
     {
       "question": "modèle OSI (7 couches)",
-      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff866d161-331a-4e4e-939a-e2cccb66c0a5%2FScreenshot_2020-09-08_at_16.43.56.png?table=block&id=6f0bd5e5-8ed8-4633-91c5-dfaacfbee22c&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_16.43.56.png?alt=media&token=621b92e1-be64-4921-85aa-9f1792006a10",
       "un_reversible": true
     },
     {
@@ -311,7 +311,7 @@
     },
     {
       "question": "Architecture TCP/IP (4 couches)",
-      "answer": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F89973903-3b48-485f-ada2-9febce31fd7f%2FScreenshot_2020-09-08_at_17.04.06.png?table=block&id=cff5ccd3-c41b-42f2-9470-20f0ccac8642&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_17.04.06.png?alt=media&token=dc86a8fb-29ee-40d5-ad7b-96cfd9ca6976",
       "un_reversible": true
     },
     {
@@ -341,8 +341,82 @@
     },
     {
       "question": "types de signaux",
-      "answer": "analogique https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6fb7ea45-47ce-440b-99f8-0348657b3f19%2FUntitled.png?table=block&id=48828826-2171-4983-bdc9-926f6d864082&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2 numérique https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F78008f89-75f6-4344-8ec5-c719728d04c2%2FUntitled.png?table=block&id=6f1a8c04-9000-4adf-9bd8-7f8513a5f7c9&width=1900&userId=c009328a-e406-4704-b4f3-f3680e3a0d2b&cache=v2",
+      "answer": "analogique https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Untitled.png?alt=media&token=91b35eae-164f-4627-a97f-0792edb0f708 numérique https://www.notion.so/image/https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/nume%CC%81rique.png?alt=media&token=6158c54e-55d6-4ba1-9644-d39d7ddf31a8",
       "un_reversible": true
+    }
+  ],
+  "gla": [
+    {
+      "question": "génie logiciel",
+      "answer": "ensemble des méthodes/outils pour le design, le développement, la validation, la vérification et la maintenance des systèmes informatiques"
+    },
+    {
+      "question": "objectif génie logiciel",
+      "answer": "avoir des procédure systématiques, rigoureuses let mesurables pour des logiciels de grande taille"
+    },
+    {
+      "question": "logiciel",
+      "answer": "ensemble d'entités nécessaires au fonctionnement d'un processus de traitement automatiques de l'information"
+    },
+    {
+      "question": "spécification",
+      "answer": "ensemble des critères que doivent satisfaire les fonctionnement interne d'un logiciel et ses interactions avec son environnement"
+    },
+    {
+      "question": "problématiques du développement fin ~60",
+      "answer": "délais de livraison non respectés, budgets non respectés, ne répond aux besoins du client, difficile à utiliser/maintenir/faire évoluer"
+    },
+    {
+      "question": "raison de la mauvaise qualité des logiciels",
+      "answer": "taches complexe, manque de méthodes/rigueur, mauvaise compréhension des besoins"
+    },
+    {
+      "question": "ingénierie",
+      "answer": "ensemble des fonctions allant de la conception et des études à la responsabilité de la construction et au contrôle des équipements d'une installation technique ou industrielle"
+    },
+    {
+      "question": "critère de qualité",
+      "answer": "analyse/specification des besoins, conception du logiciel, programmation, validation/vérification, livraison, maintenance"
+    },
+    {
+      "question": "model V",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-21_at_18.41.14.png?alt=media&token=d4303b0f-e352-476c-9140-2f55033fce9a"
+    },
+    {
+      "question": "développement par prototypage",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-21_at_18.41.31.png?alt=media&token=54240974-f782-4293-aaad-ac48dbc299e6"
+    },
+    {
+      "question": "développement agile / extreme programming",
+      "answer": "implication constante du client, programmation en binôme, dev dirigé par test, cycles de développement rapides pour réagir aux changements"
+    },
+    {
+      "question": "méthode de validation et vérification",
+      "answer": "test formel, preuve programmes et model-checking"
+    },
+    {
+      "question": "associations",
+      "answer": "relations entre les objets"
+    },
+    {
+      "question": "aggregations",
+      "answer": "référence à d'autres objets"
+    },
+    {
+      "question": "invariants",
+      "answer": "contraintes"
+    },
+    {
+      "question": "MOAL",
+      "answer": "Mathematical object-oriented UML-annotation language"
+    },
+    {
+      "question": "apparent type",
+      "answer": "static type"
+    },
+    {
+      "question": "actual / dynamic type",
+      "answer": "type in which an object was created"
     }
   ]
 }
