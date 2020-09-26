@@ -32,8 +32,11 @@ const getAllCards = () =>
       if (!value) {
         return rej(new Error(`no values found in database`));
       }
-      const cards = Object.values(value).reduce<ICard[]>(
-        (acc, cards) => [...acc, ...(cards ?? [])],
+      const cards = Object.keys(value).reduce<ICard[]>(
+        (acc, topic) => [
+          ...acc,
+          ...(value[topic]?.map((card) => ({ ...card, topic })) ?? []),
+        ],
         []
       );
       res(cards);

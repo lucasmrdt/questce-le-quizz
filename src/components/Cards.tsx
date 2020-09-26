@@ -1,9 +1,10 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import RefreshIcon from "@material-ui/icons/Refresh";
 
 import Card from "./Card";
+import { store } from "../store";
 import { ICard } from "../types";
 
 interface Props {
@@ -21,6 +22,13 @@ const Cards: React.FC<Props> = ({ cards: initialCards, onRefresh }) => {
   const onFailure = useCallback(() => {
     setCards((prev) => [...prev.slice(1), prev[0]]);
   }, []);
+
+  useEffect(() => {
+    const [selectedCard] = cards;
+    if (selectedCard) {
+      store.set("topic", selectedCard.topic ?? null);
+    }
+  }, [cards]);
 
   if (cards.length === 0) {
     return (

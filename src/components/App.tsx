@@ -6,10 +6,12 @@ import { makeStyles } from "@material-ui/core";
 
 import CardsProvider from "./CardsProvider";
 import { useCardsId } from "../hooks";
+import { useStore } from "../store";
 
 const App = () => {
   const classes = useStyles();
   const cardsId = useCardsId();
+  const [topic] = useStore("topic");
 
   return (
     <SnackbarProvider>
@@ -22,7 +24,7 @@ const App = () => {
         <GitHubIcon />
       </a>
       <h1 className={classes.title}>
-        #{(cardsId ?? "générale").toUpperCase()}
+        #{(topic ?? cardsId ?? "générale").toUpperCase()}
       </h1>
       <CardsProvider />
     </SnackbarProvider>

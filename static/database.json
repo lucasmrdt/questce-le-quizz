@@ -73,12 +73,12 @@
     },
     {
       "question": "un ordinateur",
-      "answer": "machine pour traiter de l'information et programmable",
+      "answer": "machine programmable pour traiter de l'information",
       "un_reversible": true
     },
     {
       "question": "différents composants d'un ordinateur",
-      "answer": "microprocesseur / RAM / BUS / périphérique",
+      "answer": "microprocesseur(ALU, registres, code opération) / RAM / BUS / périphérique",
       "un_reversible": true
     },
     {
@@ -91,7 +91,7 @@
     },
     {
       "question": "BUS (dérive du latin omnibus = à tous)",
-      "answer": "système de transfert de données entre plusieurs unités de traitement de données par l'intermédiaire d'une voie de transmission commune (nappe de fils)"
+      "answer": "système de transfert de données entre plusieurs unités de traitement de données par l'intermédiaire d'une voie de transmission commune (nappe de fils relie CPU, RAM et périph)"
     },
     {
       "question": "périphérique",
@@ -127,19 +127,19 @@
     },
     {
       "question": "protocole \"poignée de main\"",
-      "answer": "chaque composant a un contrôleur, 2 bits de contrôle, algorithme côté OS"
+      "answer": "chaque composant a un contrôleur, 2 bits de contrôle (occupé modifié par le contrôleur, commande modifié par l'OS) et un algorithme côté OS https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-22%20at%2008.28.00.png?alt=media&token=3d3ac525-c641-488d-902d-a31790ffba12"
     },
     {
-      "question": "communication OS - Logiciels/matériels",
-      "answer": "IRQ (Interrupt ReQuest) interruption matérielle ou logiciel (exception)"
+      "question": "communication entre OS et logiciels/matériels",
+      "answer": "interruption IRQ (Interrupt ReQuest) via quelques bits du BUS, code IRQ correspond à routine de traitement de l'OS, interruption matérielle ou logiciel (exception)"
     },
     {
       "question": "Traitement d'un IRQ (Interrupt ReQuest)",
-      "answer": "envoi via ligne IRQ, sauvegarde du contexte du processus actuelle, lit en memoire routine lié au IRQ, exécution et restauration contexte précédent"
+      "answer": "priorise les interruptions, enregistre contexte du programme en cours, passe en mode superviseur, execute la routine correspondante, restaure contexte précédent et continue à executer ce dernier"
     },
     {
       "question": "mode superviseur",
-      "answer": "accés à des instructions priviligiés et accés total sur tous les composants du système"
+      "answer": "mode dans le quel l'OS ne vérifie pas les opérations effectuées"
     },
     {
       "question": "MMU (Memory Management Unit)",
@@ -147,7 +147,19 @@
     },
     {
       "question": "programme d'amorçage",
-      "answer": "chargement sur CPU du programme contenu dans une ROM\ninit. contrôleurs\ninit RAM avec les routines\nassociation code d'interruption - adresse de la routine\nattente d'une IRQ Matérielle matérielle\n\nchargement de l'OS:\nIRQ Matérielle -> chargement de l'OS\ninit RAM\nassociation code IRQ - adresse routine\ndémarage OS"
+      "answer": "pgrm ROM -> proc, init contrôleurs, (1) init routine -> RAM, association IRQ -> addr routine, attente IRQ mat (pour charger l'OS), IRQ mat -> charger OS, (1)"
+    },
+    {
+      "question": "appels système",
+      "answer": "ensemble des instructions qu'un processus peut envoyer à l'OS"
+    },
+    {
+      "question": "interpréteur de commande (shell)",
+      "answer": "programme en charge de l'interface avec l'utilisateur"
+    },
+    {
+      "question": "architecture de l'OS",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-22%20at%2008.40.36.png?alt=media&token=e5272b4a-021f-4518-9b57-05c6c645b65b"
     },
     {
       "question": "programme",
@@ -155,11 +167,20 @@
     },
     {
       "question": "processeur",
-      "answer": "automate électronique de traitement, peut exécuter un programme, il modifie son état en fonction des instructions"
+      "answer": "automate électronique de traitement (peut exécuter un programme et modifie son état en fonction des instructions)"
+    },
+    {
+      "question": "concurrence",
+      "answer": "dans système moderne plusieurs processus s'exécutent en parallèle"
     },
     {
       "question": "processus",
       "answer": "programme exécuté par un processeur"
+    },
+    {
+      "question": "structure de données d'un processus",
+      "answer": "environnement (hérité du processus parent), tas (constantes, variables global, ...), pile (variable temporaires + contexte), code (segment exécutable du processus)",
+      "un_reversible": true
     },
     {
       "question": "structure d'un processus",
@@ -168,17 +189,17 @@
     },
     {
       "question": "rôle de l'OS",
-      "answer": "création et suppression de processus, suspension et reprise de processus et communication/synchro entre processus",
+      "answer": "création et suppression de processus, suspension/reprise de processus (multiprogrammation/temps partagé) et communication/synchronisation (partage de données, consistance état mémoire)",
       "un_reversible": true
     },
     {
-      "question": "structure de donnée (Process Control Block - PCB)",
+      "question": "PCB (Process Control Block)",
       "answer": "structure de données contenant les informations relatives à un processus utilisée par l'OS pour la gestion des processus",
       "un_reversible": true
     },
     {
       "question": "différentes composant du PCB",
-      "answer": "mémoire, gestion accès processeur, gestion périphériques, gestion temps partagé",
+      "answer": "information mémoire, données d'ordonnancement, périphériques alloués, information d'usage, etat du processus + sauvegarde de l'état du processeur",
       "un_reversible": true
     },
     {
@@ -188,27 +209,31 @@
     },
     {
       "question": "différentes raison de la suspension d'un processus",
-      "answer": "demande E/S, temps expiré, créé un processus fils, interruption wait",
+      "answer": "demande E/S -> EA, temps expiré -> P, créé un processus fils -> P, interruption wait -> EA",
       "un_reversible": true
     },
     {
-      "question": "action de l'OS",
+      "question": "consistance mémoire des processus",
       "answer": "mémoire (chaque processus à son propre espace mémoire), verrous (processus peut verrouiller une ressource) et algorithme de synchro",
       "un_reversible": true
     },
     {
-      "question": "création d'un processus",
+      "question": "fonction pour création d'un processus",
       "answer": "fork: processus dupliqué\nexec: remplacement du processus par un autre\ncreateprocess = exec",
       "un_reversible": true
     },
     {
       "question": "thread",
-      "answer": "unité de base du processus :\n- un processus peut avoir plusieurs threads\n- threads partagent le même code et les même donées\nè chaque thread a sa propre pile"
+      "answer": "unité de base du processus (partagent code, environnement, et le tas) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-22%20at%2009.02.16.png?alt=media&token=bdf088ca-f3fa-43e0-90b4-fab0710f8001"
     },
     {
       "question": "avantages des threads",
       "answer": "gain de mémoire car code partagé, réactivité processus continue à s'exécuter pendant qu'un thread est en attente et parallélisation (multi-processeur)",
       "un_reversible": true
+    },
+    {
+      "question": "cycle de vie d'un processus",
+      "answer": "prêt, en attente et en exécution"
     }
   ],
   "reseaux": [
@@ -417,6 +442,149 @@
     {
       "question": "actual / dynamic type",
       "answer": "type in which an object was created"
+    }
+  ],
+  "algo": [
+    {
+      "question": "histoire du mot algorithme",
+      "answer": "Al-Khwârizmî, perse, 830, livre sur le méthodes de calcul sur les entiers/polynomes.",
+      "un_reversible": true
+    },
+    {
+      "question": "def algorithme",
+      "answer": "procédé automatique et effectif de calcul permettant de résoudre un problème P(D) et qui s'arrête sur toute donnée D",
+      "un_reversible": true
+    },
+    {
+      "question": "problème de l'arrêt ou décidabilité",
+      "answer": "dir si un programme p s'arrête avec avec d entré",
+      "un_reversible": true
+    },
+    {
+      "question": "racine d'une équation",
+      "answer": "valeurs des inconnues tel que l'équation vaut 0"
+    },
+    {
+      "question": "algorithme décidable, automatique et effectif",
+      "answer": "s'arrête, fonctionne de lui-même et puisse faire le calcul"
+    },
+    {
+      "question": "bit-taille d'un objet (BT)",
+      "answer": "nombre de bits utilisé pour coder l'objet"
+    },
+    {
+      "question": "complexité d'un algorithme",
+      "answer": "fonction a une entrée associe le nombre d'opération X effectuées lors de l'exécution de l'algorithme sur une entrée d"
+    },
+    {
+      "question": "fonction d'arrêt est indécidable",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/fonction-arret-indecidable.png?alt=media&token=5fc40a13-46e7-4267-bacb-40e9f7df8e0e"
+    },
+    {
+      "question": "$f = O(g)$",
+      "answer": "fonction f est majoré par g ($exists delta, f le delta g$)"
+    },
+    {
+      "question": "$f = Omega (g)$",
+      "answer": "fonction f est minoré par g ($exists delta \ne 0, f ge delta g$)"
+    },
+    {
+      "question": "$f = Theta(g)$",
+      "answer": "fonction g est de l'ordre de grandeur de f ($f=O(g) land f=Omega (g)$)"
+    },
+    {
+      "question": "$f sim g$",
+      "answer": "fonction f est équivalente à g"
+    },
+    {
+      "question": "$Theta(1)$",
+      "answer": "algorithme constant"
+    },
+    {
+      "question": "$Theta(ln(n))$",
+      "answer": "algorithme logarithmique"
+    },
+    {
+      "question": "$Theta(n)$",
+      "answer": "algorithme linéaire"
+    },
+    {
+      "question": "$Theta(n*ln(n))$",
+      "answer": "algorithme quasi-linéaire"
+    },
+    {
+      "question": "$Theta(n^2)$",
+      "answer": "algorithme quadratique"
+    },
+    {
+      "question": "$Theta(n^3)$",
+      "answer": "algorithme cubique"
+    },
+    {
+      "question": "$Theta(n^p)$",
+      "answer": "algorithme polynomial"
+    },
+    {
+      "question": "$Theta(e^n)$",
+      "answer": "algorithme exponentiel (car $ln(Theta) = O(n^p)$)"
+    },
+    {
+      "question": "def récursif",
+      "answer": "fonctionnalité qui s'appelle elle-même (parfois indirectement)"
+    },
+    {
+      "question": "complexité de fibonacci",
+      "answer": "$2^{n/2} le O(fib) le 2^n $",
+      "un_reversible": true
+    },
+    {
+      "question": "évaluation paresseuse",
+      "answer": "Si A et B, si non(A) alors on évalue pas B, donc l'ordre compte",
+      "un_reversible": true
+    },
+    {
+      "question": "def variable",
+      "answer": "espace mémoire dans lequel on peut écrire et lire (qui a un type, une adresse et une valeur)"
+    },
+    {
+      "question": "def pointeur",
+      "answer": "un objet dont la valeur est l'adresse de la variable sur laquelle il pointe"
+    },
+    {
+      "question": "def recherche dychotomique",
+      "answer": "recherche d'un élément dans un tableau trier en comparant l'élement cherché par celui du milieu"
+    },
+    {
+      "question": "initialisation d'un pointeur",
+      "answer": "p ← malloc, p ← NULL, p ← q ou p ← &n"
+    },
+    {
+      "question": "def passage de paramètre par valeur",
+      "answer": "appelant envoie la valeur appelé réceptionne cette valeur et alloue et y stocke la valeur reçue"
+    },
+    {
+      "question": "def passage de paramètre par variable (ou référence)",
+      "answer": "appelant envoie l'adresse, appelé réception cette adresse et y associe sa variable à cette adresse"
+    },
+    {
+      "question": "def paramètre in/out/inout",
+      "answer": "1. in → lecture seule\n2. out → écriture uniquement\n3. inout → in et out"
+    },
+    {
+      "question": "def expression",
+      "answer": "quelque chose qui a un type (entier par exemple) à la compilation et une valeur à l'exécution"
+    },
+    {
+      "question": "def instruction",
+      "answer": "une action"
+    },
+    {
+      "question": "def procédure",
+      "answer": "prend des arguments et fait quelque chose. Pas de rendre. Répond à \"que dois-je faire ?\". p(arguments) est une instruction."
+    },
+    {
+      "question": "def fonction",
+      "answer": "lit des arguments et rend un résultat. Ne modifie pas ses arguments qui sont en IN. Elle doit tout le temps rendre. Répond à la question \"Que dois-je rendre ?\". f(arguments) est une expression."
     }
   ]
 }

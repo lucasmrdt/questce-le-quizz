@@ -16,9 +16,11 @@
     "firebase": "7.19.1",
     "katex": "0.12.0",
     "lodash": "4.17.20",
+    "nedux": "1.0.23",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-katex": "2.0.2",
+    "react-nedux": "1.0.17",
     "react-scripts": "3.4.3",
     "react-simple-snackbar": "1.1.10",
     "react-string-replace": "0.4.4",
@@ -46,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "@types/lodash": "4.14.161"
+    "@types/lodash": "4.14.161",
+    "firebase-import": "2.2.0",
+    "husky": "4.3.0"
   }
 }
