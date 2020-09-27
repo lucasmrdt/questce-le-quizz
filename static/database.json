@@ -67,12 +67,12 @@
   ],
   "systeme": [
     {
-      "question": "l'informatique",
+      "question": "def informatique",
       "answer": "science du traitement automatique de l'information",
       "un_reversible": true
     },
     {
-      "question": "un ordinateur",
+      "question": "def ordinateur",
       "answer": "machine programmable pour traiter de l'information",
       "un_reversible": true
     },
@@ -82,23 +82,23 @@
       "un_reversible": true
     },
     {
-      "question": "CPU (Central Processing Unit)",
+      "question": "def CPU (Central Processing Unit)",
       "answer": "execute les instructions machine des programmes"
     },
     {
-      "question": "RAM (Random Access Memory)",
+      "question": "def RAM (Random Access Memory)",
       "answer": "mémoire informatique dans laquelle peuvent être enregistrées les informations traitées par appareil informatique"
     },
     {
-      "question": "BUS (dérive du latin omnibus = à tous)",
+      "question": "def BUS (dérive du latin omnibus = à tous)",
       "answer": "système de transfert de données entre plusieurs unités de traitement de données par l'intermédiaire d'une voie de transmission commune (nappe de fils relie CPU, RAM et périph)"
     },
     {
-      "question": "périphérique",
+      "question": "def périphérique",
       "answer": "dispositif connecté à un système de traitement de l'information centrale et qui ajoute à ce dernier des fonctionnalitées"
     },
     {
-      "question": "système d'exploitation (Operating System)",
+      "question": "def système d'exploitation (Operating System)",
       "answer": "programme (ou ensemble de programmes) qui gère la partie matérielle et sert de socle pour les appplications (intermédiaire entre applications/matériel)"
     },
     {
@@ -134,15 +134,15 @@
       "answer": "interruption IRQ (Interrupt ReQuest) via quelques bits du BUS, code IRQ correspond à routine de traitement de l'OS, interruption matérielle ou logiciel (exception)"
     },
     {
-      "question": "Traitement d'un IRQ (Interrupt ReQuest)",
+      "question": "traitement d'un IRQ (Interrupt ReQuest)",
       "answer": "priorise les interruptions, enregistre contexte du programme en cours, passe en mode superviseur, execute la routine correspondante, restaure contexte précédent et continue à executer ce dernier"
     },
     {
-      "question": "mode superviseur",
+      "question": "def mode superviseur",
       "answer": "mode dans le quel l'OS ne vérifie pas les opérations effectuées"
     },
     {
-      "question": "MMU (Memory Management Unit)",
+      "question": "def MMU (Memory Management Unit)",
       "answer": "matériel informatique permettant la gestion des adresses virtuelles"
     },
     {
@@ -150,11 +150,11 @@
       "answer": "pgrm ROM -> proc, init contrôleurs, (1) init routine -> RAM, association IRQ -> addr routine, attente IRQ mat (pour charger l'OS), IRQ mat -> charger OS, (1)"
     },
     {
-      "question": "appels système",
+      "question": "def appels système",
       "answer": "ensemble des instructions qu'un processus peut envoyer à l'OS"
     },
     {
-      "question": "interpréteur de commande (shell)",
+      "question": "def interpréteur de commande (shell)",
       "answer": "programme en charge de l'interface avec l'utilisateur"
     },
     {
@@ -162,19 +162,24 @@
       "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-22%20at%2008.40.36.png?alt=media&token=e5272b4a-021f-4518-9b57-05c6c645b65b"
     },
     {
-      "question": "programme",
+      "question": "def pilote de périphérique",
+      "answer": "permet à l'OS de diriger un périphérique, transforme un appel OS en appel spécifique au matériel",
+      "un_reversible": false
+    },
+    {
+      "question": "def programme",
       "answer": "séquence d'instructions"
     },
     {
-      "question": "processeur",
+      "question": "def processeur",
       "answer": "automate électronique de traitement (peut exécuter un programme et modifie son état en fonction des instructions)"
     },
     {
       "question": "concurrence",
-      "answer": "dans système moderne plusieurs processus s'exécutent en parallèle"
+      "answer": "système moderne permettant l'exécution de plusieurs processus parallèlement"
     },
     {
-      "question": "processus",
+      "question": "def processus",
       "answer": "programme exécuté par un processeur"
     },
     {
@@ -183,12 +188,7 @@
       "un_reversible": true
     },
     {
-      "question": "structure d'un processus",
-      "answer": "code (recopie programme machine), environnement (défini par processus parent) et mémoire (pile d'appel et tas d'allocation)",
-      "un_reversible": true
-    },
-    {
-      "question": "rôle de l'OS",
+      "question": "rôle de l'OS sur les processus",
       "answer": "création et suppression de processus, suspension/reprise de processus (multiprogrammation/temps partagé) et communication/synchronisation (partage de données, consistance état mémoire)",
       "un_reversible": true
     },
@@ -213,7 +213,7 @@
       "un_reversible": true
     },
     {
-      "question": "consistance mémoire des processus",
+      "question": "rappel des actions de l'OS",
       "answer": "mémoire (chaque processus à son propre espace mémoire), verrous (processus peut verrouiller une ressource) et algorithme de synchro",
       "un_reversible": true
     },
@@ -234,6 +234,76 @@
     {
       "question": "cycle de vie d'un processus",
       "answer": "prêt, en attente et en exécution"
+    },
+    {
+      "question": "def multiprogrammation",
+      "answer": "plusieurs processus veulent utiliser la même ressource en même temps donc file d'attente de PCB",
+      "un_reversible": false
+    },
+    {
+      "question": "def ordonnancement",
+      "answer": "choisir un processus parmi tous les processus dans une liste d'attente pour une ressource",
+      "un_reversible": false
+    },
+    {
+      "question": "contraintes qui répond à l'ordonnancement",
+      "answer": "permettre le temps réel (petits processus qui se termine vite) et éviter les commutation d e contexte",
+      "un_reversible": true
+    },
+    {
+      "question": "ordonnancement se lance quand ...",
+      "answer": "processus en exécution se termine, nouveau processus passe dans l'état prêt (préemptif), processus en attente pas dans l'état prêt, processus en cours a eu la main trop longtemps",
+      "un_reversible": true
+    },
+    {
+      "question": "def diagramme de Grantt",
+      "answer": "représentation graphique de l'exécution de plusieurs processus affectés à plusieurs ressources au cours du temps https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-22_at_12.58.14.png?alt=media&token=a3ba5fd8-9705-4882-adfc-72873d02fdf6",
+      "un_reversible": false
+    },
+    {
+      "question": "objectifs de l'ordonnancement",
+      "answer": "équitable (tous les processus ont accès aux ressources dont ils ont besoin en fonction de leur priorité), efficace (bonne répartition entre processus E/S et calcul) et réactif (un processus ne doit pas attendre trop longtemps)",
+      "un_reversible": false
+    },
+    {
+      "question": "critères de sélections des algorithme d'ordonnancement",
+      "answer": "taux d'utilisation (proportion de temps pendant lequel le CPU est utilisé), débit (nombre moyen de processus traités par unité de temps), temps d'attente, rotation (date de fin - date de création d'un processus)",
+      "un_reversible": false
+    },
+    {
+      "question": "def algorithme préemptif",
+      "answer": "algorithme qui peut remplacer le processus actuellement en exécution par un processus entrant dans la file d'attente des processus prêts",
+      "un_reversible": false
+    },
+    {
+      "question": "calcul de la priorité",
+      "answer": "type de processus, durée estimée, priorité fixé par l'utilisateur, règle de l'OS",
+      "un_reversible": true
+    },
+    {
+      "question": "algorithme FIFO (First In First Out)",
+      "answer": "+ simple à implémenter, + équitable, - peu efficace, - peu réactif",
+      "un_reversible": true
+    },
+    {
+      "question": "algorithme plus court d'abord",
+      "answer": "algorithme préemptif, priorité correspond temps restant, calcul du temps restant $d_{n+1} = \\alpha d_n + (1 - \\alpha)t_n$, + réactif, - pas forcément efficace, - pas équitable = famine",
+      "un_reversible": false
+    },
+    {
+      "question": "def famine d'un processus",
+      "answer": "processus qui n'a jamais accès à une ressource alors qu'il est dans la file d'attente",
+      "un_reversible": false
+    },
+    {
+      "question": "algorithme round-robin",
+      "answer": "allouer des tranches de processeur égales à tout le monde (avec un quantum de temps), + équitable, + relativement réactif, - temps d'attente moyen élevé, - beaucoup de commutations",
+      "un_reversible": false
+    },
+    {
+      "question": "algorithme utilisé en concret",
+      "answer": "round robin, avec quantum de 2 à 10 fois le temps de commutation de contexte, efficace dès que la durée réelle de 80% des processus est inférieur au quantum",
+      "un_reversible": false
     }
   ],
   "reseaux": [
@@ -607,7 +677,7 @@
   ],
   "gla": [
     {
-      "question": "génie logiciel",
+      "question": "def génie logiciel",
       "answer": "ensemble des méthodes/outils pour le design, le développement, la validation, la vérification et la maintenance des systèmes informatiques"
     },
     {
@@ -615,11 +685,11 @@
       "answer": "avoir des procédure systématiques, rigoureuses let mesurables pour des logiciels de grande taille"
     },
     {
-      "question": "logiciel",
+      "question": "def logiciel",
       "answer": "ensemble d'entités nécessaires au fonctionnement d'un processus de traitement automatiques de l'information"
     },
     {
-      "question": "spécification",
+      "question": "def spécification",
       "answer": "ensemble des critères que doivent satisfaire les fonctionnement interne d'un logiciel et ses interactions avec son environnement"
     },
     {
@@ -631,7 +701,7 @@
       "answer": "taches complexe, manque de méthodes/rigueur, mauvaise compréhension des besoins"
     },
     {
-      "question": "ingénierie",
+      "question": "def ingénierie",
       "answer": "ensemble des fonctions allant de la conception et des études à la responsabilité de la construction et au contrôle des équipements d'une installation technique ou industrielle"
     },
     {
@@ -640,7 +710,7 @@
     },
     {
       "question": "model V",
-      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-21_at_18.41.14.png?alt=media&token=d4303b0f-e352-476c-9140-2f55033fce9a"
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_12.52.53.png?alt=media&token=3bed29ea-08e6-42f0-a1f2-61e058ea041e https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_22.24.21.png?alt=media&token=f145b36b-21c3-4b7b-9acf-2ce94288ac03"
     },
     {
       "question": "développement par prototypage",
@@ -677,6 +747,156 @@
     {
       "question": "actual / dynamic type",
       "answer": "type in which an object was created"
+    },
+    {
+      "question": "étape spécification",
+      "answer": "établit une description claire de ce que doit faire le logiciel, clarifier le cahier des charges",
+      "un_reversible": false
+    },
+    {
+      "question": "étape conception",
+      "answer": "élaborer une solution concrète en réalisant les specifications, description architecturales des composants, réalisation des fonctionnalités des composants (algo, organisation des données), réalisation des exigences non fonctionnelles",
+      "un_reversible": false
+    },
+    {
+      "question": "étape de validation",
+      "answer": "assurer que les besoins du client sont satisfait au niveau de la spécification",
+      "un_reversible": false
+    },
+    {
+      "question": "étape de maintenance",
+      "answer": "identifier et corriger les erreurs trouvés, adapter le logiciel aux changements de l'environnement, perfection : améliorer la performance",
+      "un_reversible": false
+    },
+    {
+      "question": "4 processus de développement",
+      "answer": "modèle en V, modèle en cascade, modèle en spiral et modèle agile",
+      "un_reversible": true
+    },
+    {
+      "question": "avantage de l'UML",
+      "answer": "utilisé par beaucoup d'industries, utilisé dans phase d'analyses des exigences, du design et pour la génération de tests techniques, permet la spécification d'objet orienté et offre sémantique formelle",
+      "un_reversible": true
+    },
+    {
+      "question": "inconvénient de l'UML",
+      "answer": "trop dépendant de sa forme rigide, diagramme pas toujours adaptables à des situations plus grandes / plus complexes et pas généralisé",
+      "un_reversible": true
+    },
+    {
+      "question": "def model element",
+      "answer": "élément de base des diagrammes",
+      "un_reversible": false
+    },
+    {
+      "question": "phase du modèle en V où l'UML peut être utilisé",
+      "answer": "phase de requirement analysis et design",
+      "un_reversible": true
+    },
+    {
+      "question": "méthodes de validation et vérification",
+      "answer": "test formel https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-21_at_18.53.06.png?alt=media&token=d661f7fc-ea04-419c-81d0-a83fce2adef0 preuve de programmes https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-21_at_18.53.17.png?alt=media&token=310269bc-caeb-4bb2-84dd-ef545e84f25f model-checking https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-21_at_18.52.57.png?alt=media&token=8fdb423d-30e0-468c-920a-20b7bfba22f1",
+      "un_reversible": true
+    },
+    {
+      "question": "diagramme de cas d'utilisation",
+      "answer": "comprendre les besoins du client pour rédiger le cahier des charges fonctionnel https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_12.59.49.png?alt=media&token=81e336c2-00b5-41fe-a835-cbb740f2ff6a",
+      "un_reversible": false
+    },
+    {
+      "question": "diagramme de séquence",
+      "answer": "représentation graphique de la chronologie des échanges de messages entre les acteurs et le système https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_18.48.09.png?alt=media&token=191fb8e1-43a5-46dc-92a9-4d371dd0276c",
+      "un_reversible": false
+    },
+    {
+      "question": "def associations",
+      "answer": "relation entre objets",
+      "un_reversible": false
+    },
+    {
+      "question": "def aggregations",
+      "answer": "référence à d'autres objets",
+      "un_reversible": false
+    },
+    {
+      "question": "def invariants",
+      "answer": "contraintes d'un graphe",
+      "un_reversible": false
+    },
+    {
+      "question": "def MOAL",
+      "answer": "Mathematical object-oriented UML-annotation language, but: class invariants, method contracts Pre/Post conditions, annotated diagrams for Scenarios",
+      "un_reversible": true
+    },
+    {
+      "question": "def langage d'annotation",
+      "answer": "langage permettant l'écriture d'invariants dans un modèle",
+      "un_reversible": false
+    },
+    {
+      "question": "def diagrammes d'objets",
+      "answer": "représentation de l'état du logiciel et évoluant avec l'exécution",
+      "un_reversible": false
+    },
+    {
+      "question": "def diagrammes de classes",
+      "answer": "représentation de la structure interne du logiciel, représentation des relation, methodes, attributs, types, ...",
+      "un_reversible": false
+    },
+    {
+      "question": "stéréotypes possibles",
+      "answer": "datatype, enumeration, interface, utility",
+      "un_reversible": false
+    },
+    {
+      "question": "autres langages d'annotations",
+      "answer": "OCL, JML, Spec# et ACSL",
+      "un_reversible": true
+    },
+    {
+      "question": "2 types que possède les objets",
+      "answer": "apparent type (static type) et actual / dynamic type (type in which an object was created)",
+      "un_reversible": false
+    },
+    {
+      "question": "spécialisation d'une classe",
+      "answer": "raffinement d'une classe ene une sous-classe (fille hérite de son parent)",
+      "un_reversible": false
+    },
+    {
+      "question": "généralisation d'une classe",
+      "answer": "abstraction d'un ensemble de classe en super-classe",
+      "un_reversible": false
+    },
+    {
+      "question": "10 model elements",
+      "answer": "les classes, attributs, méthodes, packages, associations, aggregations, composition, spécialisation, visibilité, N-ary association",
+      "un_reversible": true
+    },
+    {
+      "question": "utilité du MOAL",
+      "answer": "logique permettant de rendre les diagrammes UML plus précis",
+      "un_reversible": true
+    },
+    {
+      "question": "une transaction d'opérations",
+      "answer": "méthode m transformant un état $\\sigma_{pre}$ en un état $\\sigma$",
+      "un_reversible": false
+    },
+    {
+      "question": "conception par contrats",
+      "answer": "appelant responsable d'assurer la pré-condition et implémentation responsable d'assurer la terminaison et la post-condition",
+      "un_reversible": false
+    },
+    {
+      "question": "syntaxe d'un contrat",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_21.39.37.png?alt=media&token=cf3936f4-9868-43a9-9eca-50fb5a659118",
+      "un_reversible": true
+    },
+    {
+      "question": "prédicats utiles dans l'écriture de contrats",
+      "answer": "isNew(p) et modifiesOnly(S)",
+      "un_reversible": false
     }
   ],
   "algo": [
@@ -1051,6 +1271,31 @@
     {
       "question": "def formule insatisfiable",
       "answer": "formule est fausse pour toute les interprétation",
+      "un_reversible": false
+    },
+    {
+      "question": "def théorie",
+      "answer": "une théorie est définie par un ensemble de symboles de fonctions et de prédicats (la signature de la théorie) et un ensemble de formules closes (sans variables libres) construites sur ce langage, appelés les axiomes de la théorie.",
+      "un_reversible": true
+    },
+    {
+      "question": "def modèle d'une théorie",
+      "answer": "interprétation de la signature (càd un ensemble fonction et relations sur ce domaine) telle que dans cette interprétation, tous les axiomes ont pour valeur vraie",
+      "un_reversible": true
+    },
+    {
+      "question": "def théorie complète",
+      "answer": "si pour toute formule P on prouver P ou non P",
+      "un_reversible": false
+    },
+    {
+      "question": "def théorie décidable",
+      "answer": "si on sait pour toute formule P, décider si P est ou non prouvable à partir des axiomes",
+      "un_reversible": false
+    },
+    {
+      "question": "propriété logiques possibles",
+      "answer": "associativité : ∀ x y z, (x+y)+z=x+(y+z)\nélement neutre : ∀ x, x+0=0+x=x\ninverse : ∀ x, x+(−x)=(−x)+x=0\nréflexivité : ∀ x, x=x\nsymétrie : ∀ x y, x=y⇒ y=x\ntransitivité : ∀ x y z, x=y⇒ y=z⇒ x=z",
       "un_reversible": false
     }
   ]
