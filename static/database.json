@@ -248,11 +248,11 @@
       "un_reversible": true
     },
     {
-      "question": "réseau",
-      "answer": "ensemble d'objets interconnectés les uns aux autres qui permet de faire circuler des éléments entre ces obkets selon des règles bien définies"
+      "question": "def réseau",
+      "answer": "ensemble d'objets interconnectés les uns aux autres qui permet de faire circuler des éléments entre ces objets selon des règles bien définies"
     },
     {
-      "question": "réseau informatique",
+      "question": "def réseau informatique",
       "answer": "moyens matériels et logiciels pour faire communiquer et permettre l'échange d'informations entre plusieurs équipements ou machines de manière souple et fiable"
     },
     {
@@ -261,7 +261,7 @@
       "un_reversible": true
     },
     {
-      "question": "BER",
+      "question": "acronyme BER",
       "answer": "Bit Error Rate"
     },
     {
@@ -270,12 +270,12 @@
       "un_reversible": true
     },
     {
-      "question": "2g, 3g et 4g",
+      "question": "signification 2g, 3g et 4g",
       "answer": "GSM (Global System for Mobile), UMTS (Universal Mobile Telecommunications System), LTE (Long Term Evolution)",
       "un_reversible": true
     },
     {
-      "question": "QS",
+      "question": "acronyme QS",
       "answer": "Quality Service; paramètre de qualité d'un service (taux erreur, délais, débit, ...)",
       "un_reversible": true
     },
@@ -285,30 +285,30 @@
       "un_reversible": true
     },
     {
-      "question": "IEEE (réseaux locaux)",
+      "question": "acronyme IEEE (réseaux locaux)",
       "answer": "Institute of Electrical and Electronics Engineers"
     },
     {
-      "question": "ISO",
+      "question": "acronyme ISO",
       "answer": "International Organization for Standardization",
       "un_reversible": true
     },
     {
-      "question": "ITU (télécommunication)",
+      "question": "acronyme ITU (télécommunication)",
       "answer": "Union International des Télécomunnication",
       "un_reversible": true
     },
     {
-      "question": "IETF (RFC)",
+      "question": "acronyme IETF (RFC)",
       "answer": "Internet Engineering Task Force"
     },
     {
       "question": "classification d'un réseau",
-      "answer": "par type de transmition (diffusion ou point à point), par topologie physique https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_15.24.24.png?alt=media&token=c4317bd6-0013-4f84-9ede-8b1afc36fe79 par taille (PAN < LAN < MAN < WAN)",
+      "answer": "par type de transmission (diffusion ou point à point), par topologie physique https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_15.24.24.png?alt=media&token=c4317bd6-0013-4f84-9ede-8b1afc36fe79 par taille (PAN < LAN < MAN < WAN)",
       "un_reversible": true
     },
     {
-      "question": "Besoin d'une architecture par couches OSI (by ISO)",
+      "question": "besoin d'une architecture par couches OSI (by ISO)",
       "answer": "sous-division des problèmes, communication verticale par l'intermédiaire d'interface de service et horizontale même protocole",
       "un_reversible": true
     },
@@ -335,39 +335,274 @@
       "answer": "3 couches (OSI)"
     },
     {
-      "question": "Architecture TCP/IP (4 couches)",
+      "question": "architecture TCP/IP (4 couches)",
       "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-08_at_17.04.06.png?alt=media&token=dc86a8fb-29ee-40d5-ad7b-96cfd9ca6976",
       "un_reversible": true
     },
     {
-      "question": "bande passante ou débit de transmission",
+      "question": "def bande passante ou débit de transmission",
       "answer": "intervalle de fréquence que laisse passer le support"
     },
     {
-      "question": "débit binaire",
-      "answer": "vitesse de transmission (combien de bits on transmet)"
+      "question": "def débit binaire",
+      "answer": "vitesse de transmission (combien de bits on transmet en bit/s)"
     },
     {
-      "question": "temps de transmission $t_t$",
-      "answer": "temps necessaire pour que le message soit envoyé/écrit entièrement\n$t_t = \frac{\text{nombre de bits à émettre}}{\text{capacité (débit) du canal}}$"
+      "question": "def temps de transmission $t_t$",
+      "answer": "temps necessaire pour que le message soit envoyé/écrit entièrement\n$t_t = \\frac{\\text{nombre de bits à émettre}}{\\text{capacité (débit) du canal}}$"
     },
     {
-      "question": "temps de propagation $t_p$",
+      "question": "def temps de propagation $t_p$",
       "answer": "temps nécessaire au signal pour parcourir le support d'un point à l'autre"
     },
     {
-      "question": "temps de transfert $t_r$",
-      "answer": "temps nécessaire pour que le message émis à travers le réseau soit reçu complétement par l'équipement terminal récepteur\n$t_r = t_t + t_p$"
+      "question": "def temps de transfert $t_r$",
+      "answer": "temps nécessaire pour que le message émis à travers le réseau soit reçu complètement par l'équipement terminal récepteur\n$t_r = t_t + t_p$"
     },
     {
       "question": "types de support pour l'information",
-      "answer": "guide physique (ondes éléctrique, optiques) et sans guide physique (wireless: ondes électromagnétiques)",
+      "answer": "guide physique (ondes électrique, optiques) et sans guide physique (wireless: ondes électromagnétiques)",
       "un_reversible": true
     },
     {
       "question": "types de signaux",
       "answer": "analogique https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Untitled.png?alt=media&token=91b35eae-164f-4627-a97f-0792edb0f708 numérique https://www.notion.so/image/https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/nume%CC%81rique.png?alt=media&token=6158c54e-55d6-4ba1-9644-d39d7ddf31a8",
       "un_reversible": true
+    },
+    {
+      "question": "amplificateur vs répéteur",
+      "answer": "amplificateur amplifie aussi les erreurs et répéteur peut corriger les erreurs car les pallier sont connu",
+      "un_reversible": true
+    },
+    {
+      "question": "caractéristique d'un signal",
+      "answer": "$a(t) = A*sin(2\\pi*f(t)+\\Phi)$ avec $f=1/T$ où $T$ est la période du signal ($v = \\lambda / T$) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2011.18.50.png?alt=media&token=4917d086-a434-4610-af4c-11e50f4126de",
+      "un_reversible": true
+    },
+    {
+      "question": "formule atténuation/affaiblissement du signal",
+      "answer": "$A_f(dB) = 10log_{10}\\frac{P_s}{P_e}$ (avec $P_e$ puissance du signal émis et $P_s$ puissance du signal reçu)",
+      "un_reversible": false
+    },
+    {
+      "question": "les différents type de perturbations du signal",
+      "answer": "atténuation/affaiblissement, distorsion du signal et bruit",
+      "un_reversible": true
+    },
+    {
+      "question": "def rapidité de modulation",
+      "answer": "nombre maximum de symboles transmis par seconde. ($R=1/\\Delta$ bauds, avec $\\Delta$ l'intervalle pour coder un mot du signal en seconde)",
+      "un_reversible": false
+    },
+    {
+      "question": "def débit binaire",
+      "answer": "vitesse de transmission des données (nombre maximum de symboles binaires transmis par seconde) $D = 1/T = R * r = R * log_2(q)$ bits/s avec $T$ l'intervalle de temps pour la transmission d'un bit, $r$ nombre de bits par symbole et $q$ la valence",
+      "un_reversible": false
+    },
+    {
+      "question": "def Loi de Nyquist",
+      "answer": "débit théorique maximal d'un signal avec aucun bruit, $D_{max} = 2Blog_2(q) bits/s$ avec $B$ la bande passante du support et $q$ la valence",
+      "un_reversible": false
+    },
+    {
+      "question": "def Théorème de Shannon",
+      "answer": "débit théorique maximal d'un canal avec bruit $D_{max} = Blog_2(1+\\frac{P_s}{P_n}) bits/s$ avec $B$ la bande passante du support, $P_s/P_n$ rapport signal sur bruit ($S/N = 10Log_10(P_s/P_n)$ dB)",
+      "un_reversible": false
+    },
+    {
+      "question": "différent types de transmissions",
+      "answer": "Numérique - Numérique, Numérique - Analogique et Analogique - Numérique",
+      "un_reversible": true
+    },
+    {
+      "question": "transmission Numérique - Numérique",
+      "answer": "transmission en bande de base (signal directement envoyé sur le canal)",
+      "un_reversible": false
+    },
+    {
+      "question": "Code NRZ",
+      "answer": "No Return to Zero : signal binaire simplement transposé en tension (bonne resistance au bruit, perte de synchronisation des horloges avec longue suite) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2011.46.36.png?alt=media&token=011eae1f-eaf7-4fa2-8e44-6a797fa4955b",
+      "un_reversible": true
+    },
+    {
+      "question": "Code NRZI",
+      "answer": "No Return to Zero, Invert on ones : transition du signal pour chaque 1 (signal sans transition si longue suite de 0) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2011.49.35.png?alt=media&token=cee0051a-76f1-433f-b2d2-231b79e61757",
+      "un_reversible": true
+    },
+    {
+      "question": "Code Biphase / Manchester",
+      "answer": "provoquer un signal pour chaque bits transmis (OK avec longue séquences mais pb de repérage des fils = réception complémentaire) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2011.52.08.png?alt=media&token=e0d5766d-fa41-4131-a5b8-1c8619714f12",
+      "un_reversible": true
+    },
+    {
+      "question": "Code Biphase différentiel / Manchester différentiel",
+      "answer": "présence ou absence de transition au début de l'intervalle du signal d'horloge qui réalise le codage (plus de problème par rapport à Manchester) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2011.55.06.png?alt=media&token=c6a6def1-25cb-4c30-8032-5d8584f35be4",
+      "un_reversible": true
+    },
+    {
+      "question": "Code Bipolaire simple",
+      "answer": "Les 0 sont représentés par des potentiels nuls, les 1 par +V et -V en alternance (problème longue séquence de 0) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2011.56.33.png?alt=media&token=17817187-776a-4752-8c57-33e8af6c0452",
+      "un_reversible": true
+    },
+    {
+      "question": "Transmission Numérique - Analogique",
+      "answer": "transmission par modulation d'une onde porteuse",
+      "un_reversible": false
+    },
+    {
+      "question": "fonctionnement modulation d'one",
+      "answer": "$S_p(t) = Acos(2\\pi f_p(t)+\\Theta_p)$ avec $A$ l'amplitude, $f_p(t)$ fréquence porteuse et $\\Theta_p$ phase porteuse",
+      "un_reversible": false
+    },
+    {
+      "question": "Modulation ASK",
+      "answer": "Amplitude-Shit Keying : fait varier l'amplitude (simple mais sensible au bruit)",
+      "un_reversible": false
+    },
+    {
+      "question": "Modulation FSK",
+      "answer": "Fréquency-Shit Keying : fait varier la fréquence (si nombre d'états > 2 alors il y a augmentation de largeur de la bande)",
+      "un_reversible": false
+    },
+    {
+      "question": "Modulation PSK",
+      "answer": "Phase-Shit Keying : fait varier la phase (BPSK binary ou QPSK quadrature) (la plus employé, répartir les états de manière régulière, vitesse de transmission plus élevé)",
+      "un_reversible": false
+    },
+    {
+      "question": "exemple modulation : ASK, FSK, PSK",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2012.19.48.png?alt=media&token=cc1549a4-c422-4262-87b0-e7e8b2a0db2e",
+      "un_reversible": true
+    },
+    {
+      "question": "choix de la modulation numérique",
+      "answer": "dépend de la sensibilité au bruit, bande passante disponible, complexité de mise en oeuvre",
+      "un_reversible": true
+    },
+    {
+      "question": "Transmission Analogique - Numérique",
+      "answer": "Transmission MIC (Modulation par Impulsion et Codage) ou PCM",
+      "un_reversible": false
+    },
+    {
+      "question": "intérêt de transmission analogique - numérique",
+      "answer": "numérisation des données",
+      "un_reversible": true
+    },
+    {
+      "question": "différentes étapes de la numérisation",
+      "answer": "échantillonnage (espace temps continu à discret), quantification (espace valeurs continues à discrètes) et codage (chaque niveau quantifié est codé de façon binaire)",
+      "un_reversible": true
+    },
+    {
+      "question": "Théorème d'échantillonnage de Shannon",
+      "answer": "Si $W$ est la fréquence la plus élevée alors fréquence d'échantillonnage $f_e \\ge 2W$",
+      "un_reversible": false
+    },
+    {
+      "question": "détection d'erreurs",
+      "answer": "ajoutes d'informations aux données (bits de redondance/contrôle) mais jamais à 100% fiable",
+      "un_reversible": true
+    },
+    {
+      "question": "correction d'erreurs",
+      "answer": "après détection la redondance permet de corriger",
+      "un_reversible": false
+    },
+    {
+      "question": "2 grandes catégorie de code de protection des erreurs",
+      "answer": "code en blocs (linéaire, cycliques?) et code en treillis (convolutifs, récursifs?)",
+      "un_reversible": true
+    },
+    {
+      "question": "def construction d'un code",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2012.59.02.png?alt=media&token=b5aeb5cb-5669-4347-b097-e38ae589de42",
+      "un_reversible": true
+    },
+    {
+      "question": "def poids de hamming",
+      "answer": "nombre de bits à 1 que contient un mot",
+      "un_reversible": false
+    },
+    {
+      "question": "def distance de Hamming",
+      "answer": "nombre de positions binaires qui diffèrent entre ces 2 mots $d(x,y) = \\Sigma^N_{i=1}(x_i\\oplus y_i)$ et $d_{Hamming} = \\forall x,y x \\neq y, min(d(x,y))$",
+      "un_reversible": false
+    },
+    {
+      "question": "capacité de détection/correction d'erreur d'un code",
+      "answer": "avec distance $d=2k+p$, un code peut détecter $d-1$ erreurs et corriger $k+p-1$ erreurs",
+      "un_reversible": false
+    },
+    {
+      "question": "paramètre d'un code",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2013.08.33.png?alt=media&token=90176715-7b48-4f5d-bdd1-cb7bfa856e39",
+      "un_reversible": true
+    },
+    {
+      "question": "code à contrôle de parité (VRC: Vertical Redundancy Checking)",
+      "answer": "capable de détecter des erreurs pair (resp. impaire) mais pas de les corriger",
+      "un_reversible": false
+    },
+    {
+      "question": "code polynomiaux ou CRS (cyclic redundancy checks)",
+      "answer": "mots de n bits -> polynômes de degrés n-1, émetteur et récepteur choisissent un polynômes générateur, 2 méthodes (mult+div, div+div)",
+      "un_reversible": false
+    },
+    {
+      "question": "propriété des codes polynomiaux",
+      "answer": "détecte toutes les erreurs simples, code polynomial de degré g bits détecte toutes les rafales d'erreurs de longueur <= g, probabilité de ne pas détecter les erreurs >g est très faible",
+      "un_reversible": true
+    },
+    {
+      "question": "technique de correction d'erreurs par entrelacement",
+      "answer": "répartir les bits consécutifs dans des paquets différents",
+      "un_reversible": false
+    },
+    {
+      "question": "technique de correction d'erreurs par retransmission",
+      "answer": "si récepteur à reçu une erreur demande un autre envoie par émetteur sinon envoie un ACK",
+      "un_reversible": false
+    },
+    {
+      "question": "def fiabilité d'un réseau",
+      "answer": "pas d'erreur, pas de perte, pas de déséquencement et pas de duplication",
+      "un_reversible": false
+    },
+    {
+      "question": "liaison de données",
+      "answer": "établissement de la liaison, transfert de données et libération de la liaison",
+      "un_reversible": true
+    },
+    {
+      "question": "def protocole de liaison de donées",
+      "answer": "ensemble de règle permettant de gérer la liaison (règle de codage, de structuration et d'échange)",
+      "un_reversible": false
+    },
+    {
+      "question": "def trame",
+      "answer": "manipulations des blocs d'éléments binaires https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-27%20at%2013.30.10.png?alt=media&token=d15c0a7e-a224-44f7-b36d-f3d6e1a50f99",
+      "un_reversible": false
+    },
+    {
+      "question": "utilité d'un délimiteur de fin de trame : fanion",
+      "answer": "si erreur envoyer qu'une partie du message, taille tampon limité",
+      "un_reversible": true
+    },
+    {
+      "question": "def contrôle de flux",
+      "answer": "permet d'éviter d'engorger le récepteur",
+      "un_reversible": false
+    },
+    {
+      "question": "def ACK",
+      "answer": "acknowledgement : permet de signaler à l'émetteur d'envoyer la prochaine trame",
+      "un_reversible": true
+    },
+    {
+      "question": "def protocole à base de fenêtre",
+      "answer": "envoie de plusieurs trames avant de recevoir les ACK",
+      "un_reversible": false
     }
   ],
   "gla": [
@@ -482,51 +717,51 @@
     },
     {
       "question": "$f = O(g)$",
-      "answer": "fonction f est majoré par g ($exists delta, f le delta g$)"
+      "answer": "fonction f est majoré par g ($\\exists \\Delta, f \\le \\Delta g$)"
     },
     {
-      "question": "$f = Omega (g)$",
-      "answer": "fonction f est minoré par g ($exists delta \ne 0, f ge delta g$)"
+      "question": "$f = \\Omega (g)$",
+      "answer": "fonction f est minoré par g ($\\exists \\Delta \\neq 0, f \\ge \\Delta g$)"
     },
     {
-      "question": "$f = Theta(g)$",
-      "answer": "fonction g est de l'ordre de grandeur de f ($f=O(g) land f=Omega (g)$)"
+      "question": "$f = \\Theta(g)$",
+      "answer": "fonction g est de l'ordre de grandeur de f ($f=O(g) \\land f=\\Omega (g)$)"
     },
     {
-      "question": "$f sim g$",
+      "question": "$f \\sim g$",
       "answer": "fonction f est équivalente à g"
     },
     {
-      "question": "$Theta(1)$",
+      "question": "$\\Theta(1)$",
       "answer": "algorithme constant"
     },
     {
-      "question": "$Theta(ln(n))$",
+      "question": "$\\Theta(ln(n))$",
       "answer": "algorithme logarithmique"
     },
     {
-      "question": "$Theta(n)$",
+      "question": "$\\Theta(n)$",
       "answer": "algorithme linéaire"
     },
     {
-      "question": "$Theta(n*ln(n))$",
+      "question": "$\\Theta(n*ln(n))$",
       "answer": "algorithme quasi-linéaire"
     },
     {
-      "question": "$Theta(n^2)$",
+      "question": "$\\Theta(n^2)$",
       "answer": "algorithme quadratique"
     },
     {
-      "question": "$Theta(n^3)$",
+      "question": "$\\Theta(n^3)$",
       "answer": "algorithme cubique"
     },
     {
-      "question": "$Theta(n^p)$",
+      "question": "$\\Theta(n^p)$",
       "answer": "algorithme polynomial"
     },
     {
-      "question": "$Theta(e^n)$",
-      "answer": "algorithme exponentiel (car $ln(Theta) = O(n^p)$)"
+      "question": "$\\Theta(e^n)$",
+      "answer": "algorithme exponentiel (car $ln(\\Theta) = O(n^p)$)"
     },
     {
       "question": "def récursif",
@@ -534,7 +769,7 @@
     },
     {
       "question": "complexité de fibonacci",
-      "answer": "$2^{n/2} le O(fib) le 2^n $",
+      "answer": "$2^{n/2} \\le O(fib) \\le 2^n $",
       "un_reversible": true
     },
     {
@@ -585,6 +820,238 @@
     {
       "question": "def fonction",
       "answer": "lit des arguments et rend un résultat. Ne modifie pas ses arguments qui sont en IN. Elle doit tout le temps rendre. Répond à la question \"Que dois-je rendre ?\". f(arguments) est une expression."
+    }
+  ],
+  "logique": [
+    {
+      "question": "logicien importants",
+      "answer": "tarksi, russel, hilbert, gödel",
+      "un_reversible": true
+    },
+    {
+      "question": "def logique",
+      "answer": "language de raisonnement",
+      "un_reversible": false
+    },
+    {
+      "question": "def proposition / énoncé",
+      "answer": "phrase à qui ont peut attribuer un sens qui est une valeur de vérité",
+      "un_reversible": false
+    },
+    {
+      "question": "def raisonnement",
+      "answer": "cheminement (déduction) qui permet de partir d'énoncés (hypothèses/axiomes) et de construire de nouveaux énoncés (conclusion/conséquence)",
+      "un_reversible": false
+    },
+    {
+      "question": "def déduction",
+      "answer": "raisonnement par lequel on analyse les conséquences de quelque chose",
+      "un_reversible": false
+    },
+    {
+      "question": "def démonstration / preuve",
+      "answer": "ensemble structuré d'étapes correctes de raisonnement",
+      "un_reversible": false
+    },
+    {
+      "question": "def conclusion",
+      "answer": "affirmation qu'un argument cherche à prouver",
+      "un_reversible": false
+    },
+    {
+      "question": "def hypothèse",
+      "answer": "énoncé déjà établi et qui constitue une base de référence dans la démonstration d'une nouvelle proposition",
+      "un_reversible": false
+    },
+    {
+      "question": "def formule",
+      "answer": "décrit une propriété (vrai ou fausse), elle parle d'objets mathématiques (constantes, ...) peut être construit d'opérations",
+      "un_reversible": false
+    },
+    {
+      "question": "def arité",
+      "answer": "nombre d'objet attendu par le symbole de prédicat",
+      "un_reversible": false
+    },
+    {
+      "question": "def formule atomiques",
+      "answer": "notion qui peut être vraie ou fausse et que l'on ne peut pas décomposer sur une base de logique. Soit une tautologie/contradiction/prédicat",
+      "un_reversible": false
+    },
+    {
+      "question": "def prédicat",
+      "answer": "assertion / énoncé qui dépend d'un ou plusieurs paramètres",
+      "un_reversible": false
+    },
+    {
+      "question": "def symbole de prédicat",
+      "answer": "suite de caractère à laquelle on va pouvoir attribuer ultérieurement un sens",
+      "un_reversible": false
+    },
+    {
+      "question": "def terme",
+      "answer": "étant donné un ensemble de symboles F chacun associé à une arité et ensemble V de variables, un terme t est soit une variable, soit formé d'un symbole f d'arité n et d'une suite ordonnée de n termes t1,...,tn qui sont appelés les sous-termes de t",
+      "un_reversible": true
+    },
+    {
+      "question": "def contradiction",
+      "answer": "$\\bot$ = toujours faux",
+      "un_reversible": false
+    },
+    {
+      "question": "def tautologie",
+      "answer": "$\\top$ = toujours vrai",
+      "un_reversible": false
+    },
+    {
+      "question": "def syntaxe",
+      "answer": "étude de la façon dont les mots se combinent pour former des phrases ou des énoncés dans une langue",
+      "un_reversible": false
+    },
+    {
+      "question": "def sémantique",
+      "answer": "étude du sens, de la signification des signes, notamment dans le langage",
+      "un_reversible": false
+    },
+    {
+      "question": "symbole de prédicat avec arité 0",
+      "answer": "variable propositionnelle qui est soit vrai soit fausse",
+      "un_reversible": false
+    },
+    {
+      "question": "def symbole",
+      "answer": "suite de caractère défini avec une arité",
+      "un_reversible": false
+    },
+    {
+      "question": "symbole d'arité 0",
+      "answer": "constante",
+      "un_reversible": false
+    },
+    {
+      "question": "symbole d'arité 1",
+      "answer": "symbole unaire",
+      "un_reversible": false
+    },
+    {
+      "question": "def variables d'objet",
+      "answer": "symboles qui représente des objets permet de nommer un objet arbitraire ($x+1$)",
+      "un_reversible": false
+    },
+    {
+      "question": "paradoxe de Russel",
+      "answer": "$y={x|x\\notin x}$",
+      "un_reversible": false
+    },
+    {
+      "question": "modus de ponens",
+      "answer": "$A,\\ A\\Rightarrow B\\vdash B$",
+      "un_reversible": false
+    },
+    {
+      "question": "théorème d'incomplétude de Gödel",
+      "answer": "théorème de base de l'arithmétique est nécessairement incomplète (où il existe un énoncé qui n'est n'y démontrable ni réfutable). On parle d'énoncé indécidable.",
+      "un_reversible": false
+    },
+    {
+      "question": "def syllogisme",
+      "answer": "raisonnement logique mettant au moins 3 propositions (2 prémisses, 1 conclusion)",
+      "un_reversible": false
+    },
+    {
+      "question": "énoncé décidable",
+      "answer": "énoncé capable d'être démontré ou sa négation dans le cadre d'une théorie",
+      "un_reversible": false
+    },
+    {
+      "question": "énoncé indécidable",
+      "answer": "impossible de le déduire, ou de déduire sa négation, à partir des axiomes",
+      "un_reversible": false
+    },
+    {
+      "question": "def axiome",
+      "answer": "proposition non démontré utiliser comme fondement",
+      "un_reversible": false
+    },
+    {
+      "question": "utilité de langage formel",
+      "answer": "éviter les ambiguïtés",
+      "un_reversible": true
+    },
+    {
+      "question": "def conjonction",
+      "answer": "$P \\land Q$",
+      "un_reversible": false
+    },
+    {
+      "question": "def disjonction",
+      "answer": "$P \\lor Q$",
+      "un_reversible": false
+    },
+    {
+      "question": "quantificateur universelle, quantificateur existentielle",
+      "answer": "$\\forall$ et $\\exists$",
+      "un_reversible": false
+    },
+    {
+      "question": "syntaxe de la logique par des termes (ou objets)",
+      "answer": "à partir de variables ou des symboles de fonctions (arité 0 = constante, sinon fonction) https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-26%20at%2018.50.18.png?alt=media&token=82b6863a-48b5-40e0-a66f-32f8dcb68538",
+      "un_reversible": false
+    },
+    {
+      "question": "syntaxe de la logique par des formules",
+      "answer": "symbole de prédicats d'arité https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot%202020-09-26%20at%2018.51.14.png?alt=media&token=4fffdcbf-dc83-4c33-a717-44bf06c2c667",
+      "un_reversible": false
+    },
+    {
+      "question": "règle de précédence des opérateurs",
+      "answer": "1. $\\neg$\n2. $\\land$\n3. $\\lor$\n4. $\\implies$\n5. $\\forall \\text{ ou } \\exists$",
+      "un_reversible": false
+    },
+    {
+      "question": "def variable libre",
+      "answer": "variable qui apparaît dans une formule P mais qui n'est lié à aucuu quantificateur",
+      "un_reversible": false
+    },
+    {
+      "question": "def variable liée / muette",
+      "answer": "occurrence de la variable relié aux quantificateurs",
+      "un_reversible": false
+    },
+    {
+      "question": "def substitution",
+      "answer": "$P[x \\leftarrow t]$ formule obtenue en remplaçant dans P les variables libres x par le terme t",
+      "un_reversible": false
+    },
+    {
+      "question": "def terme close / formules closes",
+      "answer": "terme qui ne contient pas de variables / formules qui ne contient pas de variable libre",
+      "un_reversible": false
+    },
+    {
+      "question": "def modèle / interprétation",
+      "answer": "explicite les objets mis en questions et les symbole de prédicat",
+      "un_reversible": false
+    },
+    {
+      "question": "def table de vérité",
+      "answer": "soit une formule P qui contient les variables propositionnelles. Chaque ligne correspond à une interprétation différente et contient dans la colonne P, la valeur de la formule P dans cette interprétation",
+      "un_reversible": false
+    },
+    {
+      "question": "def formule valide",
+      "answer": "formule est vraie pour toute interprétation",
+      "un_reversible": false
+    },
+    {
+      "question": "def formule satisfiable",
+      "answer": "formule est vraie pour au moins un des cas",
+      "un_reversible": false
+    },
+    {
+      "question": "def formule insatisfiable",
+      "answer": "formule est fausse pour toute les interprétation",
+      "un_reversible": false
     }
   ]
 }

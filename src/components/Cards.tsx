@@ -17,6 +17,14 @@ const Cards: React.FC<Props> = ({ cards: initialCards, onRefresh }) => {
   const [cards, setCards] = useState(initialCards);
 
   const onSuccess = useCallback(() => {
+    store.set(
+      "progress",
+      (prev) =>
+        prev && {
+          ...prev,
+          current: prev.current + 1,
+        }
+    );
     setCards((prev) => prev.slice(1));
   }, []);
   const onFailure = useCallback(() => {
@@ -29,6 +37,10 @@ const Cards: React.FC<Props> = ({ cards: initialCards, onRefresh }) => {
       store.set("topic", selectedCard.topic ?? null);
     }
   }, [cards]);
+
+  useEffect(() => {
+    store.set("progress", { current: 1, total: initialCards.length });
+  }, [initialCards]);
 
   if (cards.length === 0) {
     return (
