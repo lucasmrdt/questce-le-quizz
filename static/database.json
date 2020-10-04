@@ -304,6 +304,56 @@
       "question": "algorithme utilisé en concret",
       "answer": "round robin, avec quantum de 2 à 10 fois le temps de commutation de contexte, efficace dès que la durée réelle de 80% des processus est inférieur au quantum",
       "un_reversible": false
+    },
+    {
+      "question": "def section critique",
+      "answer": "L'OS garantit qu'au plus un seul processus prêt en attente ou en exécution ou une seule thread est dans une section critique",
+      "un_reversible": false
+    },
+    {
+      "question": "def exclusion mutuelle",
+      "answer": "si une thread effectue sa section critique, alors aucune autre thread ne peut entrer en section critique",
+      "un_reversible": false
+    },
+    {
+      "question": "def déroulement",
+      "answer": "une thread qui souhaite entrer en section critique ne peut pas décider qui doit rentrer en section critique",
+      "un_reversible": false
+    },
+    {
+      "question": "def vivacité / attente bornée",
+      "answer": "une thread qui souhaite entrer en section critique y rentre en temps borné",
+      "un_reversible": false
+    },
+    {
+      "question": "propriété des sections critiques",
+      "answer": "exclusion mutuelle, déroulement et vivacité",
+      "un_reversible": true
+    },
+    {
+      "question": "méthodes de synchronisation",
+      "answer": "le mutex, l'algorithme de Dekker et sémaphore",
+      "un_reversible": true
+    },
+    {
+      "question": "def le mutex",
+      "answer": "solution limité à 2 threads : # contrôleur central, met en attente et autorise les SC chacune à son tour",
+      "un_reversible": false
+    },
+    {
+      "question": "def algorithme de Dekker",
+      "answer": "généralisation de Mutex à n processus : 3 états, tours de priorité (si celui dont c'est le tour n'est pas en demande alors je peux rentrer en SC), exclusion mutuelle (on peut rentrer en SC que si personne n'y est)",
+      "un_reversible": false
+    },
+    {
+      "question": "def sémaphore",
+      "answer": "on définit un objet partagé qu'on peut acquérir, qui met en attente ceux qui le demandent et qui donne la main dans l'ordre des demandes (disableInterrupt et enableInterrupt, wait et notify)",
+      "un_reversible": false
+    },
+    {
+      "question": "def interblocages",
+      "answer": "processus concurrents qui s'attendent mutuellement",
+      "un_reversible": false
     }
   ],
   "reseaux": [
@@ -673,6 +723,101 @@
       "question": "def protocole à base de fenêtre",
       "answer": "envoie de plusieurs trames avant de recevoir les ACK",
       "un_reversible": false
+    },
+    {
+      "question": "def LLC",
+      "answer": "moitié haute de la couche de liaison de données du modèle OSI. Elle permet de fiabiliser le protocole MAC par un contrôle d'erreur et un contrôle de flux",
+      "un_reversible": false
+    },
+    {
+      "question": "différents types de protocole",
+      "answer": "send-and-wait, go-back-N (REJ) and selective Reject (SREJ)",
+      "un_reversible": true
+    },
+    {
+      "question": "send-and-wait",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.19.24.png?alt=media&token=e0fd593c-2a3c-4f21-954c-d5e753cbf963",
+      "un_reversible": false
+    },
+    {
+      "question": "go-back-N (REJ)",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.11.52.png?alt=media&token=38e95bcd-068a-413c-9b70-6d5c0b99f9d4",
+      "un_reversible": false
+    },
+    {
+      "question": "selective Reject (SREJ)",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.13.03.png?alt=media&token=9f83f472-f88d-4734-98a1-41e03fa227b6",
+      "un_reversible": false
+    },
+    {
+      "question": "def piggybacking",
+      "answer": "superposition des communication",
+      "un_reversible": false
+    },
+    {
+      "question": "structure de la trame HDLC",
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.40.51.png?alt=media&token=f10a6f7b-ba6b-43e9-b796-4ff9c11eec39",
+      "un_reversible": false
+    },
+    {
+      "question": "section contrôle de la trame HDLC",
+      "answer": "Trame I (Information)\nhttps://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.43.24.png?alt=media&token=65be5d77-c6eb-4958-a806-8570ebdf3997\n\nTrame S (Supervisory)\n\nhttps://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.47.27.png?alt=media&token=67bf752e-66bc-4b18-ac36-6332dff38499\n\nTrames U (Unnumbered)\nhttps://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.47.41.png?alt=media&token=bf724fe1-1a35-436b-8cce-286a22800cdc",
+      "un_reversible": false
+    },
+    {
+      "question": "Trames S (Supervisory)",
+      "answer": "Permettent d'acquitter les trames reçues, indiquent si les récepteurs sont aptes à recevoir de nouvelles trames\n\n- RR (Receive Ready = ACK) : Indique que l'équipement est prêt à recevoir de nouvelles trames\n- RNR (Receive Not Ready) : Pas en mesure de traiter de nouvelles trames\n- REJ : Reject des trames à partir de la trame N(R)",
+      "un_reversible": false
+    },
+    {
+      "question": "Trames U (Unnumbered)",
+      "answer": "Définissent des commandes et réponses pour faire fonctionner la liaison\n\n- SABM : Demande d'établissement de connexion / d'ouverture en mode équilibré\n- DISC : DISConnect\n- UA : Acquittement aux commandes",
+      "un_reversible": false
+    },
+    {
+      "question": "signification des cases ? https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-29_at_14.43.24.png?alt=media&token=65be5d77-c6eb-4958-a806-8570ebdf3997",
+      "answer": "- N(S) : Numéro de séquence en émission\n- N(R) : Numéro de séquence de la prochaine trame attendu\n- P/F : P (on attend une réponse) F (on attend rien)",
+      "un_reversible": false
+    },
+    {
+      "question": "différent type de réseaux locaux",
+      "answer": "liaisons point à point (problème de coût), noeud central (l'équipement central doit être puissant pour éviter l'étranglement), médium commun (pour une connectivité totale il faut un seul câble)",
+      "un_reversible": false
+    },
+    {
+      "question": "conséquence d'un médium partagé",
+      "answer": "diffusion à tout le monde au lieu d'une personne, problème d'accès au support (collision) et confidentialité",
+      "un_reversible": false
+    },
+    {
+      "question": "technique d'accès à un bus",
+      "answer": "accès statique et accès dynamique",
+      "un_reversible": false
+    },
+    {
+      "question": "def accès dynamique",
+      "answer": "donne uniquement à ceux qui veulent parler",
+      "un_reversible": false
+    },
+    {
+      "question": "def accès statique",
+      "answer": "donne une partie de la ressource de manière statique et figé",
+      "un_reversible": false
+    },
+    {
+      "question": "algorithme d'accès dynamique de manière aléatoire",
+      "answer": "aloha (chacun émet sa trame quand elle devient active sans vérifier l'état du module en cas de collision chaque station se retire pendant une durée aléatoire), aloha discrétisé et CSMA (écouter avant de transmettre, on envoie que s'il n'y a personne)",
+      "un_reversible": true
+    },
+    {
+      "question": "roles de la couche de liaison",
+      "answer": "- transfert de données\n- connexion des E/S\n- libération de la liaison",
+      "un_reversible": false
+    },
+    {
+      "question": "les erreurs possibles lors d'une communication de données",
+      "answer": "- changement de bits\n- perte de données\n- déséquencement\n- duplication",
+      "un_reversible": false
     }
   ],
   "gla": [
@@ -710,7 +855,7 @@
     },
     {
       "question": "model V",
-      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_12.52.53.png?alt=media&token=3bed29ea-08e6-42f0-a1f2-61e058ea041e https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_22.24.21.png?alt=media&token=f145b36b-21c3-4b7b-9acf-2ce94288ac03"
+      "answer": "https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_12.52.53.png?alt=media&token=3bed29ea-08e6-42f0-a1f2-61e058ea041e https://firebasestorage.googleapis.com/v0/b/quiz-l3-info.appspot.com/o/Screenshot_2020-09-24_at_22.24.21.png?alt=media&token=a999fb43-4068-4bf6-9900-edd6c6382081"
     },
     {
       "question": "développement par prototypage",
@@ -896,6 +1041,61 @@
     {
       "question": "prédicats utiles dans l'écriture de contrats",
       "answer": "isNew(p) et modifiesOnly(S)",
+      "un_reversible": false
+    },
+    {
+      "question": "def validation",
+      "answer": "le système correspond aux attentes du client ? Les performances vont être suffisante ? L'utilisation va l'être aussi ?",
+      "un_reversible": false
+    },
+    {
+      "question": "def verification",
+      "answer": "est-ce que le système correspond aux spécifications ?",
+      "un_reversible": false
+    },
+    {
+      "question": "Comment faire de la validation ?",
+      "answer": "- Mesurer la satisfaction utilisateur\n- Faire un sondage\n- Valider le système au plus tôt : Simuler le système, faire un prototype, mock-ups, tester/animer",
+      "un_reversible": true
+    },
+    {
+      "question": "teste vs preuves",
+      "answer": "- Dijkstra’s and van Dalens famous statement in 72 : “A test can only reveal the presence of bugs, but not their absence …”\n- systematic test = approximation des preuves formelles\n- même les preuves peuvent profiter des testes afin de débuger le spécifications le plus tôt possible et gagner de l'argent",
+      "un_reversible": true
+    },
+    {
+      "question": "où tester dans un SE processus (modèle V)",
+      "answer": "dans les activités de tests, dans les phases de conception et design comme façon de valider un model/spec et dans les phases plus tardives comme vérification sur les code / modules / composants",
+      "un_reversible": true
+    },
+    {
+      "question": "def test systématique",
+      "answer": "processus utilisant des programmes / spécifications pour calculer une série de test de cas sous des conditions controllées",
+      "un_reversible": false
+    },
+    {
+      "question": "def test statique",
+      "answer": "lancer un programme avant le déploiement sur des données construite par le tester",
+      "un_reversible": false
+    },
+    {
+      "question": "def test dynamique",
+      "answer": "lancer un programme après le déploiement sur des données réelles imposé par l'application",
+      "un_reversible": false
+    },
+    {
+      "question": "def test unitaire",
+      "answer": "tester un composant local (fonction, module) typiquement sur une seule étape d'un état",
+      "un_reversible": false
+    },
+    {
+      "question": "def test de séquence",
+      "answer": "tester un composant local sur une séquence d'exécution (qui dépend de l'état interne du système",
+      "un_reversible": false
+    },
+    {
+      "question": "def test adaptatif",
+      "answer": "tester les composants par une séquences d'étapes mais cette séquence représente la communication",
       "un_reversible": false
     }
   ],
