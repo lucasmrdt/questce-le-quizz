@@ -10,7 +10,7 @@
 
 - [Test It Now](#test-it-now)
 - [Installation](#installation)
-- [Make Your Own Flash Cards](#usage)
+- [Customize](#customize)
 - [Database structure](#database-structure)
 - [Contributing](#contributing)
 - [License](#license)
@@ -29,7 +29,7 @@
 3. Install dependencies `npm install`
 4. Start the project `npm start`
 
-## Make Your Own Flash Cards
+## Customize
 
 ### 1️⃣ Create a firebase project
 
