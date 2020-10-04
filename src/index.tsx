@@ -1,22 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as firebase from "firebase";
+import "katex/dist/katex.min.css";
 
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 import "./index.css";
-import "katex/dist/katex.min.css";
+import firebaseConfig from "./assets/config";
 
-firebase.initializeApp({
-  apiKey: "AIzaSyBEhIHkUCLmfRHzHiC0WLLofw9uL2ugOQk",
-  authDomain: "quiz-l3-info.firebaseapp.com",
-  databaseURL: "https://quiz-l3-info.firebaseio.com",
-  projectId: "quiz-l3-info",
-  storageBucket: "quiz-l3-info.appspot.com",
-  messagingSenderId: "920736359774",
-  appId: "1:920736359774:web:fabd99a3c7a5404276dbcf",
-  measurementId: "G-EK9LVBQNLE",
-});
+console.log(firebaseConfig);
+
+firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 ReactDOM.render(
