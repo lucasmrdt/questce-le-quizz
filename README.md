@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/stack-react_firebase-green) ![](https://img.shields.io/badge/device-web_app-green)
 
-## Table of Contents
+## 📚 Table of Contents
 
 - [Test It Now](#test-it-now)
 - [Installation](#installation)
@@ -17,19 +17,19 @@
 
 ---
 
-## Test It Now
+## 📢 Test It Now
 
 1.  Go to the [demo here](https://quiz.lucas-marandat.fr/?id=demo).
 2.  Then enjoy !
 
-## Installation
+## 🚀 Installation
 
 1. Fork the project
 2. Clone it
 3. Install dependencies `npm install`
 4. Start the project `npm start`
 
-## Customize
+## 🎨 Customize
 
 ### 1️⃣ Create a firebase project
 
@@ -62,7 +62,7 @@ cd edt-to-google-calendar
 pip install -r requirements.txt --user
 ```
 
-## Database structure
+## 🏗 Database structure
 
 > See [static/database.json](./static/database.json)
 
@@ -80,18 +80,18 @@ pip install -r requirements.txt --user
 
 ---
 
-## Contributing
+## 💌 Contributing
 
 Fell free to enhance the project by adding some new / more customable features.
 
-## Support
+## ☎️ Support
 
 Reach out to me at one of the following places!
 
 - Website at <a href="https://lucas-marandat.fr" target="_blank">`lucas-marandat.fr`</a>
 - LinkedIn at <a href="https://www.linkedin.com/in/lucasmrdt/" target="_blank">`@lucasmrdt`</a>
 
-## License
+## 📝 License
 
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
